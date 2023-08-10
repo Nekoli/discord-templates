@@ -1,10 +1,10 @@
 /**
- * @name shaybunny_latest
+ * @name shaybunny_
  * @author nekoli
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.1.1
+ * @version 1.1
  */
  
  :root {
@@ -308,6 +308,19 @@ border-radius: 100px;
     border: 2px inset var(--shaybun-light);
     background-color: var(--shaybun-light);
 }
+
+.theme-dark .picker-20lcBA {
+    background-color: rgba(0, 52, 63, 0.8);
+}
+
+.theme-dark .soundButton-2P2Ua2 {
+    background-color: rgba(108, 194, 191,.75);
+}
+
+.theme-dark .buttonOverlayBackground-3fyfGX{
+    background-color: rgba(0, 52, 63,.75);
+}
+
 
 .searchBar-jGtisZ .icon-tZMHgY {
     background-color: rgba( 0, 52, 63, 0.25);
@@ -616,6 +629,14 @@ border-radius: 100px;
     background: var(--shaybun-light);
 }
 
+.theme-dark .button-1EGGcP.buttonColor-3bP3fX.buttonDeveloperActivityShelf-3bhcwC {
+    background-color: rgba(108, 194, 191,.75);
+}
+
+.theme-dark .button-1EGGcP.buttonColor-3bP3fX.buttonDeveloperActivityShelf-3bhcwC:hover {
+    background-color: rgba(108, 194, 191);
+}
+
 .guildNameText-jBFbNC, .theme-dark .activityIcon-vfIBet {
     color: white;
 }
@@ -816,6 +837,16 @@ border-radius: 10px;
 .contentWrapper-3vHNP2, .emojiPicker-6YCk8a,
 .contentWrapper-2f9yME {
     background-color: rgba( 0, 52, 63,.8);
+    box-shadow: none;
+}
+
+.emojiSection-3QtaWO {
+    background-color: rgba( 0, 52, 63,.5);
+    box-shadow: none;
+}
+
+.guildSection-2Zyzy8 {
+    background-color: rgba( 108, 194, 191,.5);
     box-shadow: none;
 }
 
@@ -1988,8 +2019,13 @@ border-radius: 100px;
 }
 
 .colorable-3rVGna.primaryDark-2UJt1G {
-    background: rgba(0,0,0,.3);
-border-radius: 100px;
+    background: rgba(108, 194, 191, .5);
+	border-radius: 100px;
+}
+
+.colorable-3rVGna.yellow-1PagS8 {
+    background: rgba(108, 194, 191, .5);
+	border-radius: 100px;
 }
 
 .colorable-3rVGna.primaryDark-2UJt1G.active-3D763s, .colorable-3rVGna.primaryDark-2UJt1G:hover {

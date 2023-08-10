@@ -1,10 +1,10 @@
 /**
- * @name shaybunny_
+ * @name shaybunny_latest
  * @author nekoli
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.1
+ * @version 1.1.1
  */
  
  :root {
@@ -363,9 +363,9 @@ border-radius: 100px;
 }
 
 .jumpButton-1ZwI_j, .button-cfOvv- {
-border-radius: 100px;
+	border-radius: 100px;
     color: white !important;
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(108, 194, 191,.75);
 }
 
 .avatar-2e8lTP {
@@ -1443,14 +1443,14 @@ border-radius: 100px;
 }
 
 .newMessagesBar-1hF-9G {
-border-radius: 100px;
+	border-radius: 100px;
     background-color: var(--shaybun-light);
     box-shadow: none;
 }
 
 .jumpToPresentBar-1cEnH0 {
-border-radius: 100px;
-    background-color: #242424;
+	border-radius: 8px 8px 0 0;
+    background-color: rgba(108, 194, 191, .65) !important;
 }
 
 .wrapper-1ZcZW-[style*="background-color"] {
@@ -1771,7 +1771,7 @@ border-radius: 100px;
 }
 
 .wrapper-1S43wv.muted-19J0ih, .wrapper-1S43wv.muted-19J0ih .name-3BUDLf {
-    color: red;
+    color: rgba(108, 194, 191, .5);
 }
 
 .button-1yVL_7 {
@@ -2067,6 +2067,16 @@ border-radius: 100px;
 .theme-dark .nowPlaying-3UpuKc, .theme-light .nowPlaying-3UpuKc {
     background-color: #38A84B;
     border: 2px outset #135c1f;
+}
+
+.theme-dark .activeButton-2K2Fwx, .theme-dark .activeButton-2K2Fwx:hover {
+    background-color: var(--shaybun-light);
+    color: white;
+}
+
+.theme-dark .pageButton-uta6J3:hover {
+    background-color: var(--shaybun-light);
+    color: white;
 }
 
 .bd-search-wrapper {

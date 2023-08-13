@@ -10,6 +10,7 @@
  :root {
   --shaybun-light: #6CC2BF;
   --shaybun-dark: #00343F;
+  --shaybun-link: #C5E384;
   --shaybun-bg: url(https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/upload/images/2023/08/XrcPwyUmf1eOrrEsyfKP_08_c9de05cd352c7edfeda1264ae484c28a_image_original.png);
 }
 
@@ -787,7 +788,6 @@ border-radius: 10px;
 }
 
 .input-3O04eu {
-    border-radius: 10px;
     color: white;
     background-color: rgba(108, 194, 191,.25);
     border: 1px solid transparent;
@@ -1011,7 +1011,7 @@ border-radius: 10px;
 }
 
 .theme-dark .root-1CAIjD {
-    background-color: rgba( 0, 52, 63,.5);
+    background-color: rgba( 0, 52, 63);
     box-shadow: none;
 }
 
@@ -1338,6 +1338,14 @@ border-radius: 10px;
 
 .selected-1-Z6gm .layout-1qmrhw {
     background-color: rgba(108, 194, 191, 0.78);
+}
+
+.profileCard-2gVmvm {
+	background-color: rgba(0, 52, 63, 0.5);
+}
+
+.role-3uAPnQ {
+	background-color: rgba(108, 194, 191, 0.5);
 }
 
 .profileBadges-2pItdR {
@@ -1679,12 +1687,10 @@ border-radius: 10px;
 
 .itemFilled-2Fo7lr:hover:not([aria-checked=true]):not(.disabled-WBmOu_) {
     background-color: rgba(0, 0, 0, 0.48);
-    border: 2px solid var(--shaybun-light);
 }
 
 .itemFilled-2Fo7lr[aria-checked=true] {
     background-color: rgba(0, 0, 0, 0.48);
-    border: 2px solid var(--shaybun-light);
 }
 
 .radioIconForeground-2BMavi {
@@ -2454,6 +2460,20 @@ border-radius: 100px;
     background-color: rgba(0,0,0,.8);
     color: white;
 }
+
+.theme-dark .scrollerContainer-y16Rs9 {
+	background: transparent;
+}
+
+.theme-dark .prompt-1sE27N {
+	background: rgba(0, 52, 63, 0.35);
+}
+
+.theme-dark .optionButtonWrapper-2lbogO {
+	background-color: rgba(0, 52, 63, 0.35);
+	border-color: var(--shaybun-light);
+}
+
 
 .scroller-2qwVWY {
     background-color: transparent;
@@ -3716,6 +3736,10 @@ border-radius: 100px;
     color: white;
 }
 
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:disabled {
+	background-color: rgba(108, 194, 191, 0.5)
+}
+
 .popout-15UxD6.popoutPositionTop-3Uhefd.popout-15UxD6 {
 border-radius: 10px;
    border: 2px solid rgba(255,255,255,.2);
@@ -3753,6 +3777,14 @@ border-radius: 10px;
 
 .foreground-3_3Pgi {
     color: #FF2EB9;
+}
+
+.theme-dark .selectedProgressBar-11z5d9 {
+    background-color: var(--shaybun-light);
+}
+
+.theme-dark .colorBrand-3Xb6JG {
+	color: var(--shaybun-light);
 }
 
 .theme-dark .tierInProgress-1vFUnw {
@@ -3798,7 +3830,7 @@ border-radius: 10px;
 
 .text-md-normal-2rFCH3 a,
 .text-sm-normal-AEQz4v a {
-    color: #C5E384;
+    color: var(--shaybun-link);
 }
 
 .card-ErWTld,
@@ -4175,7 +4207,7 @@ border-radius: 10px;
 .checkIcon-3eAeN_, 
 .memberCount-2G9rxE {
     border: 1px solid rgba(255, 255, 255, .2);
-    background-color: rgba(255, 255, 255, .2);
+    background-color: var(--shaybun-light);
 }
 
 .optionButton-1W9f7G.selected-KQBgNS {

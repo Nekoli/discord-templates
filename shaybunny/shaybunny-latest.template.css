@@ -1,5 +1,5 @@
 /**
- * @name shaybunny_
+ * @name shaybunny
  * @author nekoli
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
@@ -493,13 +493,13 @@ border-radius: 100px;
 
 
 .wanderingCubes-2A046F .item-2VgEex {
-    background-color: #FFEC65;
-border-radius: 100px;
+    background-color: var(--shaybun-light);
+	border-radius: 10px;
 }
 
 .jumpButton-1V_1FA {
     background-color: var(--shaybun-light);
-border-radius: 100px;
+	border-radius: 10px;
 }
 
 .jumpButton-1V_1FA .text-2ifC_x {
@@ -535,19 +535,20 @@ border-radius: 100px;
 }
 
 .reaction-3vwAF2.reactionMe-1PwQAc {
-    background: rgba(0, 52, 63, .48);
+    background: rgba(108, 194, 191, .48);
+	border-color: var(--shaybun-light);
 }
 
 .reaction-3vwAF2 {
-border-radius: 100px;
-    background: rgba(0,0,0,.25);
-    border: 3px solid #242424;
+	border-radius: 100px;
+    background: rgba(0, 52, 63,.48);
+    border: 3px solid var(--shaybun-dark);
 }
 
 /* .reaction-2A2y9y */
 
 .reaction-3vwAF2:hover {
-    background-color: rgba(0,0,0,.55);
+    background-color: rgba(108, 194, 191,.55);
 }
 
 .embedFull-1HGV2S {
@@ -610,7 +611,7 @@ border-radius: 100px;
 }
 
 .unreadPill-3nEWYM {
-border-radius: 100px;
+	
     text-transform: capitalize;
     color: #fff;
     background-color: var(--shaybun-light);
@@ -667,6 +668,11 @@ border-radius: 10px;
 }
 
 
+.theme-dark .container-1wv6C6 {
+	background-color: rgba(0, 52, 63,.5);
+}
+
+
 .browser-mnQ1T7 {
     border: var(--shaybun-light) 2px groove;
 }
@@ -677,6 +683,32 @@ border-radius: 10px;
 
 .closeIcon-11tHJX, .threadIcon-rd1kqG, .searchIcon-zpxirk {
     color: white;
+}
+
+.theme-dark .channelRow-4X_3fi {
+	background-color: rgba(0, 52, 63,.5);
+}
+
+.theme-dark .container-27tlK1 {
+	background-color: rgba(0, 52, 63,.5);
+}
+
+.theme-dark .container-1um7CU {
+	background: transparent;
+}
+
+
+.theme-dark .container-2IKOsH {
+	background: transparent;
+}
+
+.theme-dark .emptyPage-2TGR7j {
+	background: transparent;
+}
+
+
+.theme-dark .iconWrapper-3plkqh {
+    background-color: rgba(108, 194, 191,.5);
 }
 
 .clear-2gkgln,
@@ -979,9 +1011,11 @@ border-radius: 10px;
 }
 
 .theme-dark .root-1CAIjD {
-    background-color: rgba( 0, 0, 0,.5);
+    background-color: rgba( 0, 52, 63,.5);
     box-shadow: none;
 }
+
+
 
 .perks-2IIbWQ {
     background-color: rgba( 0, 52, 63,.25);
@@ -1049,7 +1083,15 @@ border-radius: 10px;
 }
 
 .replyBar-1oi75v, .threadSuggestionBar-3ExSyc {
-    background: transparent;
+    background: rgba( 108, 194, 191, .15);
+}
+
+.highlighted-1TaRLI, .replying-eZ7p5z {
+	background: rgba( 108, 194, 191, .15);
+}
+
+.highlighted-1TaRLI, .replying-eZ7p5z:before {
+	background: rgba( 108, 194, 191);
 }
 
 .attachedBars-2BCP3l {
@@ -2989,6 +3031,16 @@ border-radius: 100px;
     background-color: rgba(0, 0, 0, .5);
 }
 
+.theme-dark .colorDanger-2YLzLC {
+    background-color: rgba( 108, 194, 191, 0.5);
+}
+
+.theme-dark .button-1iHNQ2:hover {
+    background-color: rgba( 0, 52, 63, 0.5);
+	color: white;
+}
+
+
 .content-3C5Io5 a {
     color: #EECDC8;
     font-weight: 600;
@@ -3474,12 +3526,12 @@ border-radius: 100px;
 }
 
 .activityItem-1Z9CTr {
-    background: rgba(0,0,0,.6) !important;
+    background: rgba(108, 194, 191,.6) !important;
     box-shadow: none;
 }
 
 .activityTag-3C3YK5 {
-    background-color: #141414;
+    background-color: var(--shaybun-dark);
     color: white !important;
 }
 

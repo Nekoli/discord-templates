@@ -1011,7 +1011,12 @@ border-radius: 10px;
 }
 
 .theme-dark .root-1CAIjD {
-    background-color: rgba( 0, 52, 63);
+    background-color: rgba( 0, 0, 0, .25);
+    box-shadow: none;
+}
+
+.theme-dark .arrow-3Xg1RH {
+    color: var(--shaybun-light);
     box-shadow: none;
 }
 

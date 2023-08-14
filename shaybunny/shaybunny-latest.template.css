@@ -686,6 +686,14 @@ border-radius: 10px;
     color: white;
 }
 
+.theme-dark .sidebarCardWrapper-34oCuK{
+	background-color: rgba(0, 52, 63,.5);
+}
+
+.theme-dark .row--LCpto {
+	background-color: rgba(0, 52, 63,.5);
+}
+
 .theme-dark .channelRow-4X_3fi {
 	background-color: rgba(0, 52, 63,.5);
 }
@@ -975,6 +983,16 @@ border-radius: 10px;
 .firstPartyCategorySelected-2zQ3yM:hover {
     background-color: var(--shaybun-light);
     border: 2px solid black;
+}
+
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz {
+    background-color: rgba(0, 52, 63,5);
+    border-color: transparent;
+}
+
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz:hover {
+	background-color: rgba(108, 194, 191);
+    border-color: transparent;
 }
 
 .lookFilled-GPyucw.select-Zz0IcO {
@@ -4366,6 +4384,10 @@ border-radius: 10px;
 
 .theme-dark .activityUserPopoutV2-3eKqzY .headerText-3g1XK9 {
     color: white;
+}
+
+.focusLock-bHVOlV {
+	background-color: rgba(0, 52, 63, .75);
 }
 
 /* Guild Member List */

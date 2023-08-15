@@ -1064,7 +1064,7 @@ border-radius: 10px;
 }
 
 .theme-dark .root-1CAIjD {
-    background-color: var(--shaybun-dark);
+    background-color: rgba(0, 52, 63, 0.75);
     box-shadow: none;
 }
 
@@ -1767,15 +1767,28 @@ border-radius: 10px;
 }
 
 .itemFilled-2Fo7lr {
-    background-color: rgba(0, 0, 0, 0.28);
+    background-color: rgba(108, 194, 191, 0.28);
 }
 
 .itemFilled-2Fo7lr:hover:not([aria-checked=true]):not(.disabled-WBmOu_) {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(108, 194, 191, 0.48);
 }
 
 .itemFilled-2Fo7lr[aria-checked=true] {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(108, 194, 191, 0.48);
+}
+
+.theme-dark .selectorButtonSelected-3cQUnj {
+	background-color: var(--shaybun-light)!important;
+}
+
+.theme-dark .item-2OyinQ:hover {
+	background-color: var(--shaybun-light);
+}
+
+
+.theme-dark .item-2OyinQ {
+	background-color: var(--shaybun-dark);
 }
 
 .radioIconForeground-2BMavi {
@@ -1889,6 +1902,7 @@ border-radius: 100px;
     background-color: rgba(46, 46, 46, 0.3);
 }
 
+
 .profileBannerPreview-3mLIdO {
 border-radius: 100px;
     box-shadow: none;
@@ -1932,6 +1946,10 @@ border-radius: 100px;
 
 .wrapper-1S43wv .container-q97qHp {
     color: white;
+}
+
+.wrapper-1S43wv:hover .name-3BUDLf {
+	color: var(--shaybun-light);
 }
 
 .wrapper-1S43wv.muted-19J0ih, .wrapper-1S43wv.muted-19J0ih .name-3BUDLf {
@@ -2052,7 +2070,7 @@ border-radius: 100px;
 }
 
 .childWrapper-1j_1ub {
-    border-radius: 100px;
+	border-radius: 100px;
     background-color: var(--shaybun-dark);
     color: white;
 }
@@ -2229,6 +2247,11 @@ border-radius: 100px;
 
 .theme-dark .gameNameInput-2wbDJ9:focus, .theme-dark .gameNameInput-2wbDJ9:hover {
     border-color: var(--shaybun-light);
+    background-color: rgba(0, 52, 63, .51);
+}
+
+.card-m7VgZ8 {
+	border-color: var(--shaybun-light);
     background-color: rgba(0, 52, 63, .51);
 }
 
@@ -2973,15 +2996,15 @@ border-radius: 100px;
 }
 
 .card-8UsK4b {
-    background-color: rgba(0,0,0,.2);
-border-radius: 100px;
-    border: 2px solid rgba(0,0,0,.2);
+    background-color: rgba(0, 52, 63,.2);
+	border-radius: 10px;
+    border: 2px solid rgba(108, 194, 191,.2);
 }
 
 .card-8UsK4b:hover {
-    background-color: rgba(0,0,0,.5);
-border-radius: 100px;
-    border: 2px solid rgba(0,0,0,.5);
+    background-color: rgba(0, 52, 63,.5);
+	border-radius: 10px;
+    border: 2px solid rgba(108, 194, 191,.5);
 }
 
 .modal-1BeEFO a {
@@ -3219,10 +3242,6 @@ border-radius: 100px;
     border: none;
 }
 
-.theme-dark .card-8UsK4b {
-    background-color: rgba(0, 0, 0, .6);
-    border: none;
-}
 
 .divider-2zyEHJ {
     background-color: transparent;
@@ -3230,7 +3249,12 @@ border-radius: 100px;
 
 .rsvpCount-iCkObl {
     background-color: var(--shaybun-light);
-border-radius: 100px;
+	border-radius: 10px;
+}
+
+.eventStatusBrand-3D-ae6 {
+	color: var(--shaybun-light);
+
 }
 
 .rsvpIcon-1R5Esx {

@@ -1016,7 +1016,8 @@ border-radius: 10px;
 }
 
 .lookFilled-1H2Jvj.colorPrimary-2-Lusz {
-    background-color: rgba(0, 52, 63,5);
+    background-color: rgba(108, 194, 191, .66);
+    transition: background-color .6s;
     border-color: transparent;
 }
 
@@ -1827,7 +1828,7 @@ border-radius: 100px;
 }
 
 .container-3EtAkD {
-    background-color: rgba(0, 0, 0, 0.78) !important;
+    background-color: rgba(0, 52, 63, 0.78) !important;
     color: white;
 }
 
@@ -4001,7 +4002,7 @@ border-radius: 10px;
 .upsellContainer-2a5eMP,
 .upsellFooter-3M1V33,
 .developerPortalCtaWrapper-2PniQs {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 52, 63, .4);
 }
 
 .checklistHeader-3liG7E,
@@ -4061,7 +4062,34 @@ border-radius: 10px;
 .channelRowLabel-2yYGtY,
 .collapseable-1FiLab.toggled-SfZPpc:active,
 .collapseable-1FiLab:active {
-    background-color: rgba(255, 255, 255, .1);
+
+	    background-color: rgba(0, 52, 63, .7);
+    border: 2px solid rgba(255, 255, 255, .4);
+}
+
+.clickableContainer-3YtEIY, .container-AxP_J8 {
+		    background-color: rgba(0, 52, 63, .7);
+}
+
+.keywordsTextArea-3QkFoG {
+	   background-color: rgba(108, 194, 191, .29);
+}
+
+.plusIcon-2tuYHJ {
+	color: var(--shaybun-light);
+}
+
+.addPrompt-2GYVpI {
+	    border: 2px dashed var(--shaybun-light);
+    color: var(--shaybun-light);
+}
+
+.text-md-medium-2n7Vn5 {
+	color: white!important;
+}
+
+.backgroundAccent-1MMH1o {
+		    background-color: rgba(0, 52, 63, .7);
 }
 
 .actionContainer-EzNGrb {
@@ -4473,7 +4501,7 @@ border-radius: 10px;
 .changelog-2zmJ4c,
 .safetyChecklist-3kgSZf,
 .simpleItemWrapper-1Zwc4I {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 52, 63, .7);
   border: 2px solid rgba(255, 255, 255, .4);
 }
 
@@ -4632,6 +4660,36 @@ border-radius: 10px;
 
 .onboardingStepContainer-a8QN2X {
 	background-color: rgba(0, 52, 63, .5);
+}
+
+/* guild member page */
+
+.theme-dark .container-2qjEOK, .theme-dark .page-2dwf_i {
+	background: transparent;
+}
+
+.mainTableContainer-3Nxvkd {
+	background-color: rgba(0, 52, 63, .5);
+}
+
+.bannerContainer-1hFfQ1 {
+	background: rgba(0, 52, 63, .5);
+}
+
+.memberRowContainer-ZDlmmA:hover {
+	background-color: rgba(108, 194, 191, .5)!important;
+}
+
+.button-2XiUpU {
+	background-color: var(--shaybun-dark);
+}
+
+.button-2XiUpU:hover {
+	background-color: var(--shaybun-light);
+}
+
+.otherRoles-LMys1u {
+	background-color: var(--shaybun-dark);
 }
 
 /* Main Color */

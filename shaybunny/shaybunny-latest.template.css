@@ -561,6 +561,15 @@ border-radius: 100px;
     background-color: rgba(108, 194, 191,.55);
 }
 
+.wrapper-x4po40 a:link {
+	color: var(--shaybun-light)!important;
+}
+
+.wrapper-x4po40 {
+    background-color: rgba(0, 52, 63, .75);
+	color: var(--shaybun-light);
+}
+
 .embedFull-1HGV2S {
     border-left: none;
     background: rgba(0, 52, 63,.45);
@@ -1522,6 +1531,10 @@ border-radius: 10px;
     fill: var(--shaybun-light);
 }
 
+.childContainer-U_a6Yh path {
+	fill: var(--shaybun-dark);
+}
+
 .listRow-2nO1T6:hover {
     background-color: rgba(26, 26, 26, .6);
 }
@@ -1939,7 +1952,7 @@ border-radius: 100px;
 }
 
 .wrapper-NhbLHG:hover .link-1_kTxV {
-    background-color: rgba(0, 0, 0, 0.28);
+    background-color: rgba(108, 194, 191, 0.28);
 }
 
 .modeSelected-3DmyhH .link-1_kTxV, .modeSelected-3DmyhH:hover .link-1_kTxV {
@@ -1955,7 +1968,11 @@ border-radius: 100px;
     color: var(--shaybun-light);
 }
 
-.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg, .modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV {
+.modeSelected-3DmyhH .icon-2W8DHg {
+	color: var(--shaybun-light);
+}
+
+.modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV {
     color: white;
 }
 
@@ -2026,7 +2043,7 @@ border-radius: 100px;
 }
 
 .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
-    background-color: rgba(0, 0, 0, 0.28);
+    background-color: rgba(108, 194, 191, 0.28);
 }
 
 .unread-2wipsx {
@@ -2036,7 +2053,7 @@ border-radius: 100px;
 }
 
 .childWrapper-1j_1ub {
-border-radius: 100px;
+	border-radius: 10px;
     background-color: var(--shaybun-dark);
     color: white;
 }
@@ -2053,6 +2070,11 @@ border-radius: 100px;
 	border-radius: 100px;
     background-color: rgba( 0, 52, 63,.25);
 }
+
+.dropdownButton-1-5aBs {
+	color: var(--shaybun-light);
+}
+
 
 .folderIconWrapper-1oRIZr {
 	border-radius: 100px;
@@ -2094,6 +2116,10 @@ border-radius: 100px;
 border-radius: 100px;
     border: 2px solid var(--shaybun-light);
     background-color: transparent;
+}
+
+.text-xs-semibold-GgBYxI {
+  color: var(--shaybun-light)!important;
 }
 
 .text-md-normal-2rFCH3,
@@ -2524,12 +2550,13 @@ border-radius: 100px;
     background-color: rgba(108, 194, 191, 0.5) !important;
 }
 
+
 .privateChannelsHeaderContainer-1UWASm.container-q97qHp {
     color: white;
 }
 
 .avatar-1HDIsL foreignObject {
-    mask: none;
+    #mask: none;
 }
 
 .quickswitcher-pKcM9U {

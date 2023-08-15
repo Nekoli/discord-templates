@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.1
+ * @version 1.2
  */
  
  :root {
@@ -1059,19 +1059,18 @@ border-radius: 10px;
     background-color: var(--shaybun-light);
 }
 
+.theme-dark .carouselModal-1eUFoq {
+    background-color: rgba(0,0,0,.5)!important;
+}
+
 .theme-dark .root-1CAIjD {
-    background-color: transparent;
+    background-color: var(--shaybun-dark);
     box-shadow: none;
 }
 
 .theme-dark .downloadLink-3cavAH {
 	color: var(--shaybun-light)!important;
 	font-weight: 800;
-}
-
-.theme-dark .root-1CAIjD {
-    background-color: transparent;
-    box-shadow: none;
 }
 
 .theme-dark .navPrev-3Oe07S {

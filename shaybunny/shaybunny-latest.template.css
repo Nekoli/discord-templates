@@ -4039,6 +4039,7 @@ border-radius: 10px;
 }
 
 .upsellContainer-2a5eMP,
+.upsellTooltipWrapper-1wqikQ,
 .upsellFooter-3M1V33,
 .developerPortalCtaWrapper-2PniQs {
     background-color: rgba(0, 52, 63, .4);
@@ -4729,6 +4730,16 @@ border-radius: 10px;
 
 .otherRoles-LMys1u {
 	background-color: var(--shaybun-dark);
+}
+
+/* Guild new ban page */
+
+.scrollerContainer-20PD88 {
+	background-color: rgba(0, 52, 63, .7);
+}
+
+.theme-dark .bannedUser-1IrKtC {
+	background-color: rgba(108, 194, 191, .5);
 }
 
 /* Main Color */

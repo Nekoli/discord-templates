@@ -4668,6 +4668,10 @@ border-radius: 10px;
 	background-color: var(--shaybun-light)!important;
 }
 
+.channelRow-4X_3fi:hover:not(.disabled-3cfocy) {
+	background-color: rgba(108, 194, 191, .5);
+}
+
 .channelRow-3V1FiH {
 	background-color: rgba(0, 52, 63, .5);
 }
@@ -4720,6 +4724,14 @@ border-radius: 10px;
 	background-color: rgba(108, 194, 191, .5)!important;
 }
 
+.lookInverted-2GrLaB.colorBrand-2M3O3N {
+	background-color: rgba(108, 194, 191, .5);
+}
+
+.lookInverted-2GrLaB.colorBrand-2M3O3N:hover {
+	background-color: var(--shaybun-light);
+}
+
 .button-2XiUpU {
 	background-color: var(--shaybun-dark);
 }
@@ -4730,6 +4742,22 @@ border-radius: 10px;
 
 .otherRoles-LMys1u {
 	background-color: var(--shaybun-dark);
+}
+
+.checkboxCircle-C8Xapb {
+	background-color: var(--shaybun-light);
+}
+
+.upsellPreview-zfsyzm {
+	background-color: rgba(108, 194, 191, .5);
+}
+
+.previewListItem-2VAZ-Y.selected-3KWlIC {
+	background-color: rgba(0, 52, 63, .5);
+}
+
+.previewListItem-2VAZ-Y {
+	background-color: rgba(0, 52, 63, .5);
 }
 
 /* Guild new ban page */

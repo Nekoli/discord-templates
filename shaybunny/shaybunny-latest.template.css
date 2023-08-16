@@ -67,6 +67,45 @@
     background-color: rgba(0,0,0,.65);
 }
 
+.theme-dark .wrapperAudio-1Bzv_Z {
+	border-color: var(--shaybun-light);
+	background-color: var(--shaybun-dark);
+}
+
+.audioControls-3fmemK, .videoControls-2NzHnF {
+	background-color: rgba(0, 52, 63, .4);
+}
+
+.hoverButtonGroup-2yZIzC {
+	background-color: var(--shaybun-dark);
+}
+
+.hoverButton-36QWJk:hover {
+    background-color: var(--shaybun-light);
+}
+
+
+.iconWrapper-XpfprW {
+	color: var(--shaybun-light);
+	background-color: var(--shaybun-dark);
+}
+
+.playPausePop-1x3uED {
+	background-color: var(--shaybun-dark);
+}
+
+.anchor-1X4H4q {
+	color: var(--shaybun-link);
+}
+
+.mediaBarProgress-38I317 {
+	background-color: var(--shaybun-light);
+}
+
+.mediaBarProgress-38I317:after, .mediaBarProgress-38I317:before {
+	background-color: var(--shaybun-light);
+}
+
 .container-ZMc96U.themed-Hp1KC_, .chat-2ZfjoI, .members-3WRCEx, .members-3WRCEx>div,
 .chat-2ZfjoI, .container-2o3qEW, .theme-dark .container-1NXEtd, .sidebar-1tnWFu, .theme-dark .scroller-3X7KbA, .wrapper-1_HaEi {
     background: transparent;

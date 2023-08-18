@@ -1535,7 +1535,7 @@ border-radius: 10px;
 }
 
 .avatarWrapper-eenWra foreignObject, .avatarHint-k7pYop foreignObject, .avatar-3QF_VA foreignObject {
-    mask: none;
+    mask: none
 }
 
 .avatarHint-k7pYop {
@@ -2693,7 +2693,7 @@ border-radius: 100px;
 
 .avatarSizeOverride-sfatEO foreignObject, .friend-8ZraY7 .avatar-135A-D foreignObject,
 .avatar-2MSPKk foreignObject, .headerAvatar-GgCKcl foreignObject {
-    mask: none;
+   
 }
 
 .tag-15zcD_ {

@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.2
+ * @version 1.2.1
  */
  
  :root {
@@ -851,6 +851,12 @@ border-radius: 10px;
 .h5-2feg8J {
     color: white;
 }
+
+
+.buttonChild-33lB5F {
+	color: var(--shaybun-light);
+}
+
 
 .input-3O04eu {
     color: white;

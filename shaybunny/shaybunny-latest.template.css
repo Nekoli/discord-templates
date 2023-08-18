@@ -2609,6 +2609,10 @@ border-radius: 100px;
     background-color: rgba(108, 194, 191, .28);
 }
 
+.obscureWarning-2jkWgh {
+	background-color: var(--shaybun-light);
+}
+
 .closeIcon-1NwtbI, .favoriteIcon-3ybTi7 {
 	color: var(--shaybun-light)
 }
@@ -4776,6 +4780,25 @@ border-radius: 10px;
 .theme-dark .bannedUser-1IrKtC {
 	background-color: rgba(108, 194, 191, .5);
 }
+
+/* Voice message */
+
+.container-3M84ky {
+	background-color: rgba(0, 52, 63, .5)!important;
+}
+
+.theme-dark .container-3M84ky:not(.playing-1NDSYY) .playButtonContainer-2F2cAR:hover {
+	background: linear-gradient(151.11deg,rgba(108, 194, 191, .75) 16.55%,rgba(108, 194, 191) 104.36%)
+}
+
+.theme-dark .container-3M84ky:not(.playing-1NDSYY) .playButtonContainer-2F2cAR {
+	background: linear-gradient(151.11deg,rgba(0, 52, 63, .75) 16.55%,rgba(0, 52, 63) 104.36%)
+}
+
+.playIcon-1cttj4 {
+	color: var(--shaybun-light);
+}
+
 
 /* Main Color */
 .main-color {color: var(--shaybun-light);}

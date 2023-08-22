@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.2.1
+ * @version 1.2.2
  */
  
  :root {
@@ -368,6 +368,14 @@ border-radius: 100px;
 
 .theme-dark .buttonOverlayBackground-3fyfGX{
     background-color: rgba(0, 52, 63,.75);
+}
+
+.bar-wDIGjg {
+	background-color: var(--shaybun-dark);
+}
+
+.unreadIcon-3dqgX9 {
+	color: var(--shaybun-light);
 }
 
 
@@ -784,7 +792,7 @@ border-radius: 10px;
 
 .icon-mJhEWn,
 .icon-2yhmi8 {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(108, 194, 191,.7);
 	border-radius: 10px;
     color: white;
 }
@@ -851,12 +859,6 @@ border-radius: 10px;
 .h5-2feg8J {
     color: white;
 }
-
-
-.buttonChild-33lB5F {
-	color: var(--shaybun-light);
-}
-
 
 .input-3O04eu {
     color: white;
@@ -1535,7 +1537,7 @@ border-radius: 10px;
 }
 
 .avatarWrapper-eenWra foreignObject, .avatarHint-k7pYop foreignObject, .avatar-3QF_VA foreignObject {
-    mask: none
+    mask: none;
 }
 
 .avatarHint-k7pYop {
@@ -1606,7 +1608,7 @@ border-radius: 10px;
 }
 
 .baseShapeRound-3epLEv {
-    border-radius: 100px;
+    border-radius: 8px;
 }
 
 .numberBadge-37OJ3S[style*="background-color"] {
@@ -2070,18 +2072,22 @@ border-radius: 100px;
     display: none;
 }
 
+.item-2LIpTv {
+    background-color: rgba(108, 194, 191, .7) !important;
+}
+
 .item-2LIpTv[style*="height: 40px"] {
     height: 32px !important;
     width: 32px;
-border-radius: 100px;
-    background-color: #6CC2BF !important;
+	border-radius: 100px;
+    background-color: rgba(108, 194, 191) !important;
 }
 
 .item-2LIpTv[style*="height: 8px"], .item-2LIpTv[style*="height: 20px"] {
     height: 12px !important;
     width: 12px;
-border-radius: 100px;
-    background-color: rgba(0, 52, 63, .61) !important;
+	border-radius: 100px;
+    background-color: rgba(108, 194, 191, .5) !important;
 }
 
 .theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
@@ -2609,10 +2615,6 @@ border-radius: 100px;
     background-color: rgba(108, 194, 191, .28);
 }
 
-.obscureWarning-2jkWgh {
-	background-color: var(--shaybun-light);
-}
-
 .closeIcon-1NwtbI, .favoriteIcon-3ybTi7 {
 	color: var(--shaybun-light)
 }
@@ -2697,7 +2699,7 @@ border-radius: 100px;
 
 .avatarSizeOverride-sfatEO foreignObject, .friend-8ZraY7 .avatar-135A-D foreignObject,
 .avatar-2MSPKk foreignObject, .headerAvatar-GgCKcl foreignObject {
-   
+    mask: none;
 }
 
 .tag-15zcD_ {
@@ -2888,11 +2890,11 @@ border-radius: 100px;
 }
 .reaction-102jx9 {
 border-radius: 100px;
-    background: rgba(0,0,0,.25);
-    border: 3px solid #242424;
+    background: rgba(0, 52, 63,.25);
+    border: 3px solid var(--shaybun-dark);
 }
 .reaction-102jx9:hover {
-    background-color: rgba(0,0,0,.55);
+    background-color: rgba(0, 52, 63,.55);
     border: 3px solid var(--shaybun-light);
 }
 .reaction-102jx9.reactionMe-2zhiyZ {
@@ -3707,7 +3709,7 @@ border-radius: 100px;
 }
 
 .box-2iMsQm {
-    background-color: #181818;
+    background-color: rgba(0, 52, 63,.5);
 }
 
 .box-2iMsQm:after {
@@ -4049,10 +4051,20 @@ border-radius: 10px;
 }
 
 .upsellContainer-2a5eMP,
-.upsellTooltipWrapper-1wqikQ,
 .upsellFooter-3M1V33,
 .developerPortalCtaWrapper-2PniQs {
     background-color: rgba(0, 52, 63, .4);
+}
+
+.lookInverted-2GrLaB.colorBrand-2M3O3N {
+	color: white;
+}
+
+.upsellTooltipWrapper-1wqikQ {
+	background-color: rgba(0, 52, 63);
+}
+.upsellTooltipWrapper-1wqikQ.caretTopCenter-1wqGIE:after {
+	border-bottom-color: rgba(0, 52, 63);
 }
 
 .checklistHeader-3liG7E,
@@ -4735,7 +4747,6 @@ border-radius: 10px;
 }
 
 .lookInverted-2GrLaB.colorBrand-2M3O3N {
-	color: white;
 	background-color: rgba(108, 194, 191, .5);
 }
 
@@ -4780,25 +4791,6 @@ border-radius: 10px;
 .theme-dark .bannedUser-1IrKtC {
 	background-color: rgba(108, 194, 191, .5);
 }
-
-/* Voice message */
-
-.container-3M84ky {
-	background-color: rgba(0, 52, 63, .5)!important;
-}
-
-.theme-dark .container-3M84ky:not(.playing-1NDSYY) .playButtonContainer-2F2cAR:hover {
-	background: linear-gradient(151.11deg,rgba(108, 194, 191, .75) 16.55%,rgba(108, 194, 191) 104.36%)
-}
-
-.theme-dark .container-3M84ky:not(.playing-1NDSYY) .playButtonContainer-2F2cAR {
-	background: linear-gradient(151.11deg,rgba(0, 52, 63, .75) 16.55%,rgba(0, 52, 63) 104.36%)
-}
-
-.playIcon-1cttj4 {
-	color: var(--shaybun-light);
-}
-
 
 /* Main Color */
 .main-color {color: var(--shaybun-light);}

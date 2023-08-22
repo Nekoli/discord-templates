@@ -1,5 +1,5 @@
 /**
- * @name shaybunny
+ * @name shaybunny_dev
  * @author nekoli
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
@@ -1062,6 +1062,10 @@ border-radius: 10px;
     border: 2px solid black;
 }
 
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz:disabled {
+    background-color: rgba(0, 52, 63, .66);
+}
+
 .lookFilled-1H2Jvj.colorPrimary-2-Lusz {
     background-color: rgba(108, 194, 191, .66);
     transition: background-color .6s;
@@ -1351,7 +1355,7 @@ border-radius: 10px;
 
 .attachment-1PZZB2 {
     border-color: transparent;
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0, 52, 63,.25);
 }
 
 .theme-dark .message-G6O-Wv {
@@ -1618,7 +1622,7 @@ border-radius: 10px;
 }
 
 .wrapper-1HIH0j {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 52, 63,.4);
 }
 
 .guildIcon-3ZfRfI {
@@ -3732,7 +3736,9 @@ border-radius: 100px;
 
 .header-11eigE,
 .container-3a5mk- {
-    background-color: #141414;
+    background-color: rgba(0, 52, 63, 0.8);
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 }
 
 .tile-2TcwiO {
@@ -4790,6 +4796,24 @@ border-radius: 10px;
 
 .theme-dark .bannedUser-1IrKtC {
 	background-color: rgba(108, 194, 191, .5);
+}
+
+/* Voice message */
+
+.container-3M84ky {
+	background-color: rgba(0, 52, 63, .5)!important;
+}
+
+.theme-dark .container-3M84ky:not(.playing-1NDSYY) .playButtonContainer-2F2cAR:hover {
+	background: linear-gradient(151.11deg,rgba(108, 194, 191, .75) 16.55%,rgba(108, 194, 191) 104.36%)
+}
+
+.theme-dark .container-3M84ky:not(.playing-1NDSYY) .playButtonContainer-2F2cAR {
+	background: linear-gradient(151.11deg,rgba(0, 52, 63, .75) 16.55%,rgba(0, 52, 63) 104.36%)
+}
+
+.playIcon-1cttj4 {
+	color: var(--shaybun-light);
 }
 
 /* Main Color */

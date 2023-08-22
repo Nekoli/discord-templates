@@ -1,5 +1,5 @@
 /**
- * @name shaybunny_dev
+ * @name shaybunny
  * @author nekoli
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
@@ -34,6 +34,14 @@
 
 .root-2s1-ri>* {
     background-color: transparent;
+}
+
+.root-cw9rWQ {
+	background: rgba(0, 52, 63, .4);
+}
+
+.option-1O-Hwt:hover {
+	background: rgba(108, 194, 191, .4);
 }
 
 .withTagAsButton-OsgQ9L:hover, 

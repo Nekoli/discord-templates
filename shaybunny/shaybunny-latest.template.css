@@ -3383,12 +3383,12 @@ border-radius: 100px;
 .placeholderUsername-3iQi_D,
 .memberGroupsPlaceholder-9tqX9V {
   background-color: var(--shaybun-light);
-border-radius: 100px;
+	border-radius: 10px;
 }
 
 .table-17_dGF {
-    background-color: rgba(0,0,0,.6);
-border-radius: 100px;
+    background-color: rgba(108, 194, 191,.6);
+	border-radius: 10px;
 }
 
 .checkboxLabel-3VTAjH {

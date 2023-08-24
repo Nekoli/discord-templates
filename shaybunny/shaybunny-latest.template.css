@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.2.2
+ * @version 1.2.3
  */
  
  :root {
@@ -4822,6 +4822,22 @@ border-radius: 10px;
 
 .playIcon-1cttj4 {
 	color: var(--shaybun-light);
+}
+
+/* Login page */
+.theme-dark.authBox-1HR6Ha {
+	background-color: rgba(0, 52, 63, .5)!important;
+}
+
+.characterBackground-1BPOOJ {
+	width: 0;
+	height: 0;
+}
+
+.app-3xd6d0 {
+    background-image: var(--shaybun-bg);
+    background-size: cover;
+    background-color: transparent;
 }
 
 /* Main Color */

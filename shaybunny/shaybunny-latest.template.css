@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.2.3
+ * @version 1.2.4
  */
  
  :root {
@@ -26,6 +26,14 @@
 
 .countContainer-3DOo5v {
     background-color: var(--shaybun-light);
+}
+
+.chatContent-3KubbW {
+	background: transparent;
+}
+
+.content-2qc4CV {
+	background-image: var(--shaybun-bg);
 }
 
 .preview-3SR4Rd {
@@ -516,7 +524,7 @@ border-radius: 100px;
 }
 
 .primary-38Hs-h:hover:not(.disabled-184-il), .secondary-2bzKEX {
-    background-color: rgba(0,0,0,.25);
+   background-color: rgba(0, 52, 63,.5);
 }
 
 .tertiary-1e-lAP:hover:not(.disabled-184-il) {
@@ -1869,7 +1877,31 @@ border-radius: 10px;
 }
 
 .titleContainer-3fPic2, .header-JUTO-g {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.messageContainer-3a6gLR {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.theme-light .messageContainer-3a6gLR {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.titleContainer-16mFj2 {
+	background-color: rgba(0, 52, 63,.5);
+}
+
+.tabBar-3DfKkN {
+	background-color: rgba(0, 52, 63,.5);	
+}
+
+.roleRow-230vCm:hover:not(.roleRowDisableHover-3En0vy) .circleButton-2Yr5A1 {
+	background-color: rgba(0, 52, 63,.95);	
+}
+
+.roleRow-230vCm:hover:not(.roleRowDisableHover-3En0vy) {
+	background-color: rgba(108, 194, 191, 0.28);
 }
 
 .top-Ktfr_T .brand-2EKq3J.item-2GWPIy:active, .top-Ktfr_T .brand-2EKq3J.selected-1sf9UK.item-2GWPIy {
@@ -4750,6 +4782,30 @@ border-radius: 10px;
 	background-color: rgba(0, 52, 63, .5);
 }
 
+/* server shop */
+
+html:not(.custom-theme-background) .container-Vrgqxz {
+	background-color: rgba(0, 52, 63, .5);
+}
+
+.theme-dark .opaqueBackground-3Unh3V {
+	background-color: rgba(0, 52, 63, .5);
+}
+
+.card-2cxbBa:hover .cardContent-3kz5is {
+	outline: 1.5px solid var(--shaybun-light);
+}
+
+.tabSelected-1a9MlN {
+	background-color: var(--shaybun-light);
+	border: 1px solid var(--shaybun-light);
+	box-shadow: 0 0 4px 0 var(--shaybun-light);
+}
+
+.body-3ysK6O {
+	background-color: transparent;
+}
+
 /* guild member page */
 
 .theme-dark .container-2qjEOK, .theme-dark .page-2dwf_i {
@@ -4849,6 +4905,16 @@ border-radius: 10px;
     background-image: var(--shaybun-bg);
     background-size: cover;
     background-color: transparent;
+}
+
+/* screenshare */
+
+.callContainer-HtHELf {
+	background: transparent;
+}
+
+.wrapper-1gVUIN {
+	background: transparent;
 }
 
 /* Main Color */

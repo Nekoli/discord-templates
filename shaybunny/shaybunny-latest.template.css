@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.2.4
+ * @version 1.2.5
  */
  
  :root {
@@ -3851,6 +3851,11 @@ button[aria-label="Open sticker picker"] {
 }
 /* Hide help button */
 [href="https://support.discord.com"] {
+	display: none;
+}
+
+/* Hide Active Now */
+.scroller-hE2gWq {
 	display: none;
 }
 

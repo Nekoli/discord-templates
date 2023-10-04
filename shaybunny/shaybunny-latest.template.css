@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 1.2.5
+ * @version 1.2.6
  */
  
  :root {
@@ -12,9 +12,40 @@
   --shaybun-dark: #00343F;
   --shaybun-link: #C5E384;
   --shaybun-bg: url(https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/upload/images/2023/08/XrcPwyUmf1eOrrEsyfKP_08_c9de05cd352c7edfeda1264ae484c28a_image_original.png);
+  --shaybun-svg: url(https://raw.githubusercontent.com/Nekoli/discord-templates/main/shaybunny/shaycord.svg);
 }
 
- .app-2CXKsg {
+body {
+
+    background-color: #00222B;
+}
+
+.wordmark-2u86JB svg {display: none;}
+
+.wordmark-2u86JB {
+	display: block;
+	background: var(--shaybun-svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 !important;
+    position: fixed;
+    width: 128px;
+    height: 16px;
+	color: var(--shaybun-light);
+	left: 10px;
+	
+}
+
+.appMount-2yBXZl {
+	background: transparent !important;
+}
+
+.container-2RRFHK {
+	background-color: transparent;
+}
+
+
+.app-2CXKsg {
     background-image: var(--shaybun-bg);
     background-size: cover;
     background-color: transparent;
@@ -90,6 +121,14 @@
 
 .audioControls-3fmemK, .videoControls-2NzHnF {
 	background-color: rgba(0, 52, 63, .4);
+}
+
+.vc-addon-card {
+	background-color: rgba(0, 52, 63, .4);
+}
+
+.vc-addon-card:hover {
+	background-color: rgba(108, 194, 191, .65);
 }
 
 .compactButton-3hG-bs {
@@ -1121,8 +1160,29 @@ border-radius: 10px;
 	
 }
 
-.option-Uc12mm[aria-selected=true] {
-    background-color: #6CC2BF !important;
+.option-Uc12mm[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+    background-color: rgba(0, 52, 63);
+}
+
+.option-Uc12mm[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4):hover {
+    background-color: rgba(108, 194, 191);
+}
+
+.wrapper-24fR1R {
+	background-color: rgba(0, 52, 63, .5);
+}
+
+.action-2YPPom {
+	background-color: rgba(0, 52, 63);
+	color: var(--shaybun-light);
+}
+
+.emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq {
+	 background-color: rgba(108, 194, 191);
+}
+
+.wrapper-24fR1R:hover {
+	background-color: rgba(108, 194, 191, .5);
 }
 
 .option-Uc12mm {
@@ -1281,20 +1341,20 @@ border-radius: 10px;
 }
 
 .theme-dark .container-jV-A82 {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 52, 63,.3);
 }
 
 .theme-dark .row-XYkFDK {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 52, 63,.4);
 }
 
 .theme-dark .container-1iKw09 {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 52, 63,.3);
 }
 
 
 .theme-dark .container-2WMFjc {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 52, 63,.3);
 }
 
 .theme-dark .autocomplete-3NRXG8 {
@@ -1302,11 +1362,11 @@ border-radius: 10px;
 }
 
 .theme-dark .box-3QCU9H {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 52, 63,.3);
 }
 
 .theme-dark .enableCard-707m1C {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 52, 63,.3);
 }
 
 
@@ -2065,7 +2125,7 @@ border-radius: 100px;
 }
 
 .theme-dark .default-1Tkeeg {
-    background-color: rgba(0, 0, 0, 0.68);
+    background-color: rgba(108, 194, 191, 0.68);
 }
 
 .wrapper-NhbLHG:hover .link-1_kTxV {
@@ -2455,7 +2515,7 @@ border-radius: 100px;
 }
 
 .cardPrimary-pAe8Ed {
-    background: rgba(0, 0, 0, 0.28);
+    background: rgba(0, 52, 63, 0.28);
 }
 
 .cardPrimary-pAe8Ed, .cardPrimary-pAe8Ed.editable-2xfXMr {
@@ -2556,7 +2616,7 @@ border-radius: 100px;
 }
 
 .promotionCard-mo7ClH, .noItemsCard-5EOcCl, .detailsBlock-24pLFz {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(0, 52, 63, 0.48);
 }
 
 .connectContainer-1hylYM {
@@ -2606,7 +2666,23 @@ border-radius: 100px;
 }
 
 .connection-YOVI9j {
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 52, 63,.45);
+}
+
+.guildContainer-o60hpj {
+	background-color: rgba(0, 52, 63,.45);
+}
+
+.wrapper-3htY7x {
+	background-color: rgba(0, 52, 63,.45);
+}
+
+.header-1JnOIs {
+	background-color: rgba(0, 52, 63,.45);
+}
+
+.boostContainer-RzXAwu {
+	background-color: rgba(108, 194, 191,.45);
 }
 
 .noIcon-3gSX9V {
@@ -4566,7 +4642,7 @@ border-radius: 10px;
 }
 
 .card-2guEcY:not(.outline-3kFzf8) {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 52, 63, .2);
 }
 
 .audienceContainerCollapsed-2OXkcm,

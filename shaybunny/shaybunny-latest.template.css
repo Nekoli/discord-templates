@@ -2763,8 +2763,12 @@ border-radius: 100px;
 
 .quickswitcher-pKcM9U {
     box-shadow: none;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 52, 63,.8);
     color: white;
+}
+
+.autocompleteQuerySymbol-1iAOG7 {
+	background-color: rgba(108, 194, 191,.8);
 }
 
 .theme-dark .scrollerContainer-y16Rs9 {
@@ -3921,6 +3925,11 @@ button[aria-label="Open sticker picker"] {
 [href="/store"] {
 	display: none;
 }
+
+/* Hide nitro button */
+[href="/shop"] {
+	display: none;
+}
 /* Hide family button */
 [href="/family-center"] {
 	display: none;
@@ -3932,6 +3941,10 @@ button[aria-label="Open sticker picker"] {
 
 /* Hide Active Now */
 .scroller-hE2gWq {
+	display: none;
+}
+
+.nowPlayingColumn-1eCBCN {
 	display: none;
 }
 
@@ -4996,6 +5009,48 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .wrapper-1gVUIN {
 	background: transparent;
+}
+
+/* server shop */
+.solidBackground-13BMn7 {
+	background-color: rgba(0, 52, 63, .5)!important;
+}
+
+.container-BY3bnw {
+	background-color: rgba(0, 52, 63, .5)!important;
+}
+
+.theme-dark .previewNotice-19XEBw {
+	background-color: rgba(108, 194, 191, .75)!important;
+}
+
+.theme-dark .learnMoreTipContainer-zpYfCh {
+	background-color: rgba(0, 52, 63, .75)!important;
+}
+
+.metricCard-30mtXR {
+	background-color: rgba(0, 52, 63, .75)!important;
+}
+
+.pill-_U3jjQ {
+	background-color: rgba(108, 194, 191, .75)!important;
+	border: 1px solid rgba(0, 52, 63, .75)!important;
+}
+
+.container-ikgCx8 {
+	background-color: rgba(0, 52, 63, .75)!important;
+}
+
+.addFileButtonLook-kvmcNx {
+	background-color: rgba(108, 194, 191, .75)!important;
+}
+
+.tableContainer-2sN3OB {
+	background-color: rgba(0, 52, 63, .75)!important;
+}
+
+.shop-3sIaH8 {
+	background-color: transparent;
 }
 
 /* Main Color */

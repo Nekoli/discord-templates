@@ -183,8 +183,8 @@ ul[data-list-id="guildsnav"] > div[dir] {
   padding-top: 18px;
 }
 
-ul[data-list-id="guildsnav"] [class^="pill-"],
-ul[data-list-id="guildsnav"] [class^="pill-"] > div {
+ul[data-list-id="guildsnav"] [class^="pill_"],
+ul[data-list-id="guildsnav"] [class^="pill_"] > div {
   height: 40px !important;
   background: rgba(var(--shay-dark-rgba), 1);
 }
@@ -194,7 +194,7 @@ ul[id^="folder-items-"] {
   height: auto !important;
 }
 
-ul[data-list-id="guildsnav"] [class^="pill-"] span {
+ul[data-list-id="guildsnav"] [class^="pill_"] span {
   width: 10px;
   margin-left: -5px;
   border-radius: 20px;
@@ -284,11 +284,11 @@ div[class^="sidebar_"] > nav > div[class^="searchBar"] {
   background: rgb(var(--mdshay-light-rgba), 0.9);
 }
 
-div[data-list-id^="members-"][class*="scrollerBase_"] {
+div[data-list-id^="members_"][class*="scrollerBase_"] {
   background: transparent;
 }
 
-div[data-list-id^="members-"] [class*="placeholder"] {
+div[data-list-id^="members_"] [class*="placeholder"] {
   --backgorund-primary: var(--text-normal);
 }
 
@@ -338,7 +338,7 @@ div[class^="notAppAsidePanel_"] > div[class^="app_"] > div[class^="app_"],
 div[class^="app_"] > div[class^="bg_"] {
   background-color: transparent;
 }
-div[class*="baseLayer-"] > div[class^="container-"] {
+div[class*="baseLayer_"] > div[class^="container_"] {
   background-color: rgb(var(--shay-dark-rgba), 0.3);
 }
 
@@ -441,7 +441,7 @@ section div[class^="toolbar"] > div[role] svg {
   width: 22px;
 }
 
-section div[class^="toolbar"] > div[role][class*="selected-"] {
+section div[class^="toolbar"] > div[role][class*="selected_"] {
   background-color: rgba(var(--shay-light-rgba), 0.3);
   border-radius: 6px;
 }

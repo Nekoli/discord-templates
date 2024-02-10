@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 2.0
+ * @version 2.1
  */
 
 /* 
@@ -35,10 +35,11 @@ button {
   --background-solid-darker: #000d0f;
   --accent: 108, 194, 191;
   --accent-alt: 108, 194, 191;
-  --md-black: 0, 0, 0;
-  --dm-white: 255, 255, 255;
+  --shay-dark-rgba: 0, 0, 0;
+  --shay-light-rgba: 255, 255, 255;
   --shay-light-rgba: 108, 194, 191;
-  --shay-light-hsl: 178°, 41%, 59%;
+  --shay-light-hsl: 178, 41%, 59%, 0.5;
+  --shay-dark-hsl: 190, 100%, 12%, 0.8;
   --shay-dark-rgba: 0, 52, 63;
   --shay-link-rgba: 197, 227, 132;
   --shaybun-light: #6cc2bf;
@@ -53,7 +54,6 @@ button {
 :not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
 :not(div[class*="userProfile"]).theme-light,
 div[class*="userProfile"][class*="unThemed"].theme-light {
-  /* Discord vars */
   --background-primary: rgba(var(--shay-dark-rgba), 0.3);
   --background-mobile-primary: var(--background-primary);
   --background-secondary: rgba(var(--shay-dark-rgba), 0.4);
@@ -64,23 +64,23 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --background-accent: rgba(var(--shay-dark-rgba), 0.1);
   --background-message-hover: rgba(var(--shay-light-rgba), 0.4);
   --channeltextarea-background: transparent;
-  --activity-card-background: rgba(var(--dm-white), 0.05);
+  --activity-card-background: rgba(var(--shay-light-rgba), 0.05);
   --deprecated-store-bg: transparent;
   --background-modifier-hover: rgba(var(--shay-light-rgba), 0.3);
   --background-modifier-active: rgba(var(--shay-light-rgba), 0.3);
   --background-modifier-selected: rgba(var(--shay-light-rgba), 0.6);
   --elevation-low: inset 0 -1px 0 0 rgba(var(--shay-dark-rgba), 0.3);
-  --channels-default: rgba(var(--dm-white), 0.65);
+  --channels-default: rgba(var(--shay-light-rgba), 0.65);
   --channel-icon: rgba(var(--shay-light-rgba), 0.75);
   --deprecated-quickswitcher-input-background: rgba(var(--shay-dark-rgba), 0.1);
-  --header-primary: rgba(var(--dm-white), 1);
-  --header-secondary: rgba(var(--dm-white), 0.6);
-  --text-normal: rgba(var(--dm-white), 0.8);
+  --header-primary: rgba(var(--shay-light-rgba), 1);
+  --header-secondary: rgba(var(--shay-light-rgba), 0.6);
+  --text-normal: rgba(var(--shay-light-rgba), 0.8);
   --text-muted: #d2d5da;
   --interactive-muted: rgba(var(--shay-light-rgba), 0.15);
   --interactive-normal: rgba(var(--shay-light-rgba), 0.75);
   --interactive-hover: rgba(var(--shay-light-rgba), 1);
-  --interactive-active: rgba(var(--dm-white), 1);
+  --interactive-active: rgba(var(--shay-light-rgba), 1);
   --deprecated-card-bg: rgba(var(--shay-light-rgba), 0.05);
   --text-link: rgba(var(--shay-link-rgba), 1);
   --focus-primary: rgba(var(--accent), 1);
@@ -96,8 +96,8 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --button-secondary-background: rgba(var(--shay-dark-rgba), 0.8);
   --button-secondary-background-active: var(--shaybun-light);
   --button-secondary-background-hover: var(--shaybun-light);
-  --primary-630: hsl(var(--shay-light-hsl) / 1);
-  --primary-630-hsl: 220 calc(var(1, 1) * 6.5%) 18%;
+  --primary-630: hsla(var(--shay-dark-hsl));
+  --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
 }
 
 ::selection {
@@ -107,20 +107,20 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 /* Scrollbars */
 
 ::-webkit-scrollbar {
-  width: 12px !important;
+  width: 14px !important;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px !important;
   border: 3px solid transparent !important;
-  background-color: rgba(var(--shay-light-rgba), 1) !important;
+  background-color: rgba(var(--accent-alt), 1) !important;
 }
 
 ::-webkit-scrollbar-track {
   visibility: visible !important;
   border-radius: 8px !important;
   border: 3px solid transparent !important;
-  background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
   background-clip: padding-box !important;
 }
 
@@ -131,8 +131,8 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 /* Titlebar */
 
 div[class*="typeWindows_"] {
-  --background-modifier-hover: rgba(var(--dm-white), 0.05);
-  --background-modifier-active: rgba(var(--dm-white), 0.075);
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.05);
+  --background-modifier-active: rgba(var(--shay-light-rgba), 0.075);
   height: 26px;
 }
 
@@ -147,9 +147,9 @@ div[class*="typeWindows_"] > div[role="button"] {
 
 div[class*="typeWindows_"]::after {
   content: "Shaycord";
-  font-weight: 8000;
+  font-weight: 5000;
   line-height: 31px;
-  color: var(--shaybun-light);
+  color: var(--text-muted);
   font-size: 14px;
   position: absolute;
   padding: 0 12px;
@@ -164,15 +164,15 @@ div[class*="typeWindows_"]::after {
 /* Guilds */
 
 nav[class*="guilds_"] {
-  background: rgba(var(--shay-dark-rgba), 0.85);
-  border-right: 1px solid rgba(var(--md-black), 0.2);
+  background: transparent;
 }
 ul[data-list-id="guildsnav"] {
-  --background-secondary: rgba(var(--shay-light-rgba), 0);
-  --background-primary: rgba(var(--dm-white), 0.1);
-  background-color: none;
-  border-right: 1px solid rgba(var(--md-black), 0.2);
-  box-shadow: inset -10px 0px 20px -10px rgba(var(--md-black), 0.3);
+  --background-secondary: var(--background-solid);
+  --background-primary: rgba(var(--shay-light-rgba), 0.1);
+  margin-bottom: 70px;
+  background-color: rgba(var(--shay-dark-rgba), 0.6);
+  border-right: 1px solid rgba(var(--shay-dark-rgba), 0.2);
+  box-shadow: inset -10px 0px 20px -10px rgba(var(--shay-dark-rgba), 0.3);
 }
 
 ul[data-list-id="guildsnav"] ::-webkit-scrollbar {
@@ -186,7 +186,6 @@ ul[data-list-id="guildsnav"] > div[dir] {
 ul[data-list-id="guildsnav"] [class^="pill_"],
 ul[data-list-id="guildsnav"] [class^="pill_"] > div {
   height: 40px !important;
-  background: rgba(var(--shay-dark-rgba), 1);
 }
 
 ul[data-list-id="guildsnav"] div[style*="height: 56"],
@@ -201,13 +200,13 @@ ul[data-list-id="guildsnav"] [class^="pill_"] span {
 }
 
 [data-list-id="guildsnav"]
-  [class^="pill-"]
+  [class^="pill_"]
   span[style^="opacity: 1; height: 40"] {
-  --header-primary: rgba(var(--shay-light-rgba), 1);
+  --header-primary: rgba(var(--accent), 1);
 }
 
 span[class^="expandedFolderBackground_"] {
-  --background-secondary: rgba(var(--shay-light-rgba), 0.25);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.25);
   border-radius: 14px;
   width: 40px;
   left: 16px;
@@ -216,25 +215,18 @@ span[class^="expandedFolderBackground_"] {
 /* Guild Icon Size */
 
 /* .wrapper-28eC3z,
-[data-list-id="guildsnav"] [data-dnd-name] > div,
-[data-list-id="guildsnav"] svg[width="48"] {
-  width: 40px;
-  height: 40px;
-}
-
-.wrapper-28eC3z,
-[data-list-id="guildsnav"] [data-dnd-name] > div,
-[data-list-id="guildsnav"] svg[width="48"] {
-  width: 40px;
-  height: 40px;
-} */
+ [data-list-id='guildsnav'] [data-dnd-name] > div,
+ [data-list-id='guildsnav'] svg[width="48"] {
+	 width: 40px;
+	 height: 40px;
+ } */
 
 div[data-list-item-id="guildsnav___home"] {
   background: var(--home-image) center/200% no-repeat;
 }
 
 div[class^="unreadMentionsIndicatorBottom_"] {
-  bottom: 10px;
+  bottom: 70px;
 }
 
 #app-mount [data-list-item-id="guildsnav___home"] > div {
@@ -247,8 +239,8 @@ div[data-list-item-id="guildsnav___guild-discover-button"] {
   transition: 150ms ease;
   opacity: 0.5;
   background-color: var(--background-solid) !important;
-  color: rgba(var(--dm-white), 0.3) !important;
-  border: 1px dashed rgba(var(--dm-white), 0.3);
+  color: rgba(var(--shay-light-rgba), 0.3) !important;
+  border: 1px dashed rgba(var(--shay-light-rgba), 0.3);
   border-radius: 50px;
 }
 
@@ -266,9 +258,8 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 
 div[class^="sidebar_"] nav,
 #private-channels {
-  color: var(--dm-white);
   background: var(--background-secondary) !important;
-  --background-tertiary: rgba(var(--shay-dark-rgba), 0.8);
+  --background-tertiary: rgba(var(--shay-dark-rgba), 0.35);
 }
 
 div[class^="sidebar_"] > nav > div[class^="searchBar"] {
@@ -277,25 +268,25 @@ div[class^="sidebar_"] > nav > div[class^="searchBar"] {
 
 /* members wrapper */
 .container_b2ce9c {
-  --background-secondary: rgba(var(--shay-light-rgba), 0.4);
-  --background-modifier-hover: rgba(var(--dm-white), 0.07);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.4);
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.07);
   --background-modifier-active: var(--background-modifier-hover);
-  --background-modifier-selected: rgba(var(--dm-white), 0.07);
-  background: rgb(var(--mdshay-light-rgba), 0.9);
+  --background-modifier-selected: rgba(var(--shay-light-rgba), 0.07);
+  background: rgb(var(--shay-dark-rgba), 0.9);
 }
 
-div[data-list-id^="members_"][class*="scrollerBase_"] {
+div[data-list-id^="members-"][class*="scrollerBase_"] {
   background: transparent;
 }
 
-div[data-list-id^="members_"] [class*="placeholder"] {
+div[data-list-id^="members-"] [class*="placeholder"] {
   --backgorund-primary: var(--text-normal);
 }
 
 div[class^="nowPlayingColumn"] {
   --background-secondary: transparent;
   --background-primary: rgba(var(--shay-dark-rgba), 0.5);
-  --background-modifier-hover: rgba(var(--dm-white), 0.075);
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.075);
 }
 div[class^="members_"] div[class^="member_"] {
   background-color: transparent;
@@ -312,8 +303,8 @@ nav[aria-label] > div > header {
   flex-direction: column;
   justify-content: center;
   height: 54px;
-  --background-accent: rgba(var(--shay-light-rgba), 1);
-  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.25);
+  --background-accent: rgba(var(--accent), 1);
+  --background-modifier-hover: rgba(var(--shay-dark-rgba), 0.25);
 }
 
 /* Outer containers */
@@ -331,55 +322,79 @@ body {
 #app-mount > div[class^="appDevToolsWrapper_"] {
   --background-primary: transparent;
   --background-tertiary: transparent;
-  --background-secondary: rgba(var(--shay-light-rgba), 0.7);
-  background-color: rgba(var(--shay-light-rgba), 0.4);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.7);
+  background-color: rgba(var(--shay-dark-rgba), 0.4);
 }
 div[class^="notAppAsidePanel_"] > div[class^="app_"] > div[class^="app_"],
 div[class^="app_"] > div[class^="bg_"] {
   background-color: transparent;
 }
 div[class*="baseLayer_"] > div[class^="container_"] {
-  background-color: rgb(var(--shay-dark-rgba), 0.3);
+  background-color: rgb(var(--shay-dark-rgba), 0.4);
 }
 
 nav + div [class^="sidebar_"],
-nav + div[class^="base-"] {
+nav + div[class^="base_"] {
   overflow: visible !important;
   position: relative;
   max-width: calc(100% - 72px);
 }
 
-nav + div[class^="base-"] > div[class^="notice"] {
+nav + div[class^="base_"] > div[class^="notice"] {
   border-radius: 0;
 }
 
-div[class^="base-"] > div,
+div[class^="base_"] > div,
 section[class*="themed_"] {
-  --background-secondary: rgba(var(--shay-dark-rgba), 0.8);
-  --background-tertiary: rgba(var(--dm-white), 0.05);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.7);
+  --background-tertiary: rgba(var(--shay-light-rgba), 0.05);
   --background-primary: rgba(var(--shay-dark-rgba), 0.8);
 }
 
-#app-mount > div:not([class^="appDevToolsWrapper-"]),
+#app-mount > div:not([class^="appDevToolsWrapper_"]),
 .autocomplete-1vrmpx {
   --background-primary: var(--background-solid);
   --background-secondary: var(--background-solid-dark);
-  --background-secondary-alt: var(--shaybun-light);
+  --background-secondary-alt: var(--background-solid-darker);
   --background-tertiary: var(--background-solid-darker);
-}
-
-div[class^="callContainer"] {
-  background-color: rgb(var(--shay-dark-rgba), 0.85);
 }
 
 /* Header */
 
-/* section[class*="themed_"] {
-	height: 54px;
-	box-shadow: var(--elevation-low);
-    background-color: rgb(var(--md-black), 0.925) !important;
-	--background-secondary: rgba(var(--dm-white), 0.1);
-}*/
+section[class*="themed_"] {
+  height: 54px;
+  box-shadow: var(--elevation-low);
+  background-color: rgb(var(--shay-dark-rgba), 0.925) !important;
+  --background-secondary: rgba(var(--shay-light-rgba), 0.1);
+}
+
+section > div > a[href*="support.discord.com"] {
+  display: none;
+}
+
+section[class*="themed_"]::before,
+section[class*="themed_"] ::after {
+  content: none;
+}
+
+section div[class^="toolbar"] > div[role] {
+  margin: 0 4px;
+  transition: 150ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 28px;
+  height: 28px;
+}
+
+section div[class^="toolbar"] > div[role] svg {
+  width: 22px;
+}
+
+section div[class^="toolbar"] > div[role][class*="selected_"] {
+  background-color: rgba(var(--shay-light-rgba), 0.1);
+}
 
 /* Hide NOW PLAYING */
 div[class*="nowPlayingColumn"] {
@@ -421,37 +436,12 @@ button[aria-label="Open sticker picker"] {
   display: none;
 }
 
-section[class*="themed_"]::before,
-section[class*="themed_"] ::after {
-  content: none;
-}
-
-section div[class^="toolbar"] > div[role] {
-  margin: 0 4px;
-  transition: 150ms ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  width: 28px;
-  height: 28px;
-}
-
-section div[class^="toolbar"] > div[role] svg {
-  width: 22px;
-}
-
-section div[class^="toolbar"] > div[role][class*="selected_"] {
-  background-color: rgba(var(--shay-light-rgba), 0.3);
-  border-radius: 6px;
-}
-
 /* Panels */
 
 div[class^="sidebar_"] > section {
-  --background-primary: rgba(var(--dm-white), 0.07);
-  --background-secondary: rgba(var(--dm-white), 0.1);
-  --background-secondary-alt: rgba(var(--shay-dark-rgba), 0.8);
+  --background-primary: rgba(var(--shay-light-rgba), 0.07);
+  --background-secondary: rgba(var(--shay-light-rgba), 0.1);
+  --background-secondary-alt: rgba(var(--shay-dark-rgba), 0.95);
   margin-bottom: 70px;
 }
 
@@ -459,8 +449,8 @@ div[class^="sidebar_"] > section > div:last-child {
   background: rgba(var(--shay-dark-rgba), 0.8);
   box-sizing: border-box;
   height: 70px;
+  max-width: 250px;
   position: absolute;
-
   bottom: 0;
 }
 div[class^="sidebar_"] > section > div:last-child [class^="avatarWrapper_"] {
@@ -488,17 +478,16 @@ div[class^="chat"] main form::before {
 
 div[data-list-id="chat-messages"] {
   --background-primary: transparent;
-  --background-secondary: rgba(var(--dm-white), 0.05);
-  --background-accent: rgba(var(--dm-white), 0.1);
+  --background-secondary: rgba(var(--shay-light-rgba), 0.05);
+  --background-accent: rgba(var(--shay-light-rgba), 0.1);
 }
 
 div[class^="channelTextArea_"] {
   --background-secondary: transparent;
-  box-shadow: inset 0 0 0 2px rgba(var(--shay-light-rgba), 1);
+  box-shadow: inset 0 0 0 2px rgba(var(--shay-light-rgba), 0.1);
   transition: 250ms ease;
   margin-bottom: 24px;
   margin-top: 12px;
-
   border-radius: 5px;
 }
 
@@ -537,14 +526,14 @@ div[id^="chat-messages-"][class*="cozy_"] div::before {
 
 .mention {
   transition: 150ms ease;
-  color: rgba(var(--shay-light-rgba), 1) !important;
-  background-color: rgba(var(--shay-dark-rgba), 0.2);
+  color: rgba(var(--accent), 1) !important;
+  background-color: rgba(var(--accent), 0.3);
   padding: 3px 5px;
   border-radius: 5px;
 }
 
 .mention:hover {
-  background-color: rgba(var(--shay-dark-rgba), 0.4) !important;
+  background-color: rgba(var(--accent), 0.3) !important;
 }
 
 #app-mount .container__5c7e7 {
@@ -553,28 +542,28 @@ div[id^="chat-messages-"][class*="cozy_"] div::before {
 
 div[class*="barBase_"] {
   padding-bottom: 0;
-  background-color: rgba(var(--shay-light-rgba), 0.8);
+  background-color: rgba(var(--accent-alt), 0.9);
 }
 
 /* Codeblocks */
 
 html pre {
-  border-radius: 1px;
+  border-radius: 0;
   background: transparent;
-  border-color: rgba(var(--shay-light-rgba), 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 pre code.hljs {
   border: none;
-  background-color: rgba(var(--shay-dark-rgba), 0.3);
-  color: rgba(var(--dm-white), 0.7);
+  background-color: rgba(var(--shay-light-rgba), 0.1);
+  color: rgba(var(--shay-light-rgba), 0.7);
   padding: 1em;
 }
 
 html code.inline,
 html code.inline {
-  background: rgba(var(--dm-white), 0.1);
-  color: rgba(var(--dm-white), 0.7);
+  background: rgba(var(--shay-light-rgba), 0.1);
+  color: rgba(var(--shay-light-rgba), 0.7);
   padding: 0.3em 0.6em;
   border-radius: 3px;
 }
@@ -600,7 +589,7 @@ div[class^="contentRegion_"] div[style^="overflow: hidden scroll"] {
   --background-primary: rgba(var(--shay-dark-rgba), 0.1);
   --background-secondary: rgba(var(--shay-dark-rgba), 0.2);
   --background-secondary-alt: rgba(var(--shay-dark-rgba), 0.25);
-  --background-tertiary: rgba(var(--dm-white), 0.1);
+  --background-tertiary: rgba(var(--shay-light-rgba), 0.1);
 }
 
 div[aria-label*="_SETTINGS"] aside > div {
@@ -622,29 +611,29 @@ div[class*="topPill"],
 nav > div[role="tablist"],
 .bd-tab-bar {
   --background-accent: rgba(var(--accent));
-  --background-modifier-hover: rgba(var(--dm-white), 0.05);
-  --background-modifier-active: rgba(var(--dm-white), 0.075);
-  --background-modifier-selected: rgba(var(--shay-light-rgba), 0.25);
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.05);
+  --background-modifier-active: rgba(var(--shay-light-rgba), 0.075);
+  --background-modifier-selected: rgba(var(--accent), 0.25);
 }
 
 /* Server Discovery */
 
 div[class^="sidebar"] + [class^="pageWrapper"] {
-  --background-secondary: rgba(var(--shay-dark-rgba), 0.45);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.8);
   background-color: var(--background-secondary);
 }
 
 /* Crash Page */
 
 div[class*="errorPage"] {
-  --background-secondary: rgba(var(--shay-dark-rgba), 0.45) !important;
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.7) !important;
 }
 
 /* Tooltips */
 
 div[class^="tooltip_"] {
-  --background-floating: rgba(var(--shay-light-rgba), 1);
-  --text-normal: #fff;
+  --background-floating: rgba(var(--accent-alt), 1);
+  --text-normal: #e0e0e0;
 }
 
 /* Buttons */
@@ -671,11 +660,6 @@ div[role="menuitem"]:active {
 /* Depreceated Components */
 
 /* These use hardcoded colors, no need to bother with strange selectors */
-
-/* save changes */
-#app-mount .container-20TyK0 {
-  background-color: var(--background-secondary) !important;
-}
 
 #app-mount .footer-2gL1pp,
 #app-mount .footer-3mqk7D {
@@ -734,7 +718,7 @@ div[role="menuitem"]:active {
 
 #app-mount .payment-xT17Mq {
   background-color: transparent;
-  border-bottom-color: rgba(var(--dm-white), 0.025);
+  border-bottom-color: rgba(var(--shay-light-rgba), 0.025);
 }
 
 #app-mount .bottomDivider-1K9Gao,
@@ -782,7 +766,7 @@ div[data-list-id^="members-"] > div {
 
 .css-3vaxre-menu,
 .tierMarker-5HkGJ_[style] {
-  border-color: rgba(var(--dm-white), 0.025) !important;
+  border-color: rgba(var(--shay-light-rgba), 0.025) !important;
 }
 
 #app-mount .searchAnswer-3Dz2-q,

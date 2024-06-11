@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 2.1
+ * @version 2.2
  */
 
 /* 
@@ -49,6 +49,8 @@ button {
   --accentcolor: var(--shay-light-rgba);
   --vaccentcolor-hover: rgb(var(--shay-light-rgba));
   --vaccentcolor-active: rgb(var(--shay-light-rgba));
+  --brand-260: var(--shaybun-dark);
+  --brand-560: var(--shaybun-light);
 }
 
 :not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
@@ -120,7 +122,7 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   visibility: visible !important;
   border-radius: 8px !important;
   border: 3px solid transparent !important;
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: transparent !important;
   background-clip: padding-box !important;
 }
 
@@ -169,8 +171,7 @@ nav[class*="guilds_"] {
 ul[data-list-id="guildsnav"] {
   --background-secondary: var(--background-solid);
   --background-primary: rgba(var(--shay-light-rgba), 0.1);
-  margin-bottom: 70px;
-  background-color: rgba(var(--shay-dark-rgba), 0.6);
+  background-color: rgba(var(--shay-dark-rgba), 0.8);
   border-right: 1px solid rgba(var(--shay-dark-rgba), 0.2);
   box-shadow: inset -10px 0px 20px -10px rgba(var(--shay-dark-rgba), 0.3);
 }
@@ -346,7 +347,7 @@ nav + div[class^="base_"] > div[class^="notice"] {
 
 div[class^="base_"] > div,
 section[class*="themed_"] {
-  --background-secondary: rgba(var(--shay-dark-rgba), 0.7);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.8);
   --background-tertiary: rgba(var(--shay-light-rgba), 0.05);
   --background-primary: rgba(var(--shay-dark-rgba), 0.8);
 }
@@ -364,7 +365,7 @@ section[class*="themed_"] {
 section[class*="themed_"] {
   height: 54px;
   box-shadow: var(--elevation-low);
-  background-color: rgb(var(--shay-dark-rgba), 0.925) !important;
+  background-color: rgb(var(--shay-dark-rgba), 0.8) !important;
   --background-secondary: rgba(var(--shay-light-rgba), 0.1);
 }
 
@@ -661,8 +662,21 @@ div[role="menuitem"]:active {
 
 /* These use hardcoded colors, no need to bother with strange selectors */
 
+#app-mount .optionBox_d9023e {
+  background-color: rgba(var(--shay-dark-rgba), 0.7) !important;
+}
+
+/* new channel in guild */
+#app-mount .newChannel__1bbcf {
+  background-color: var(--shaybun-dark)!important;
+  color: var(--shaybun-light)!important;
+}
+
+/* hiding discovery footer cause it is gay */
 #app-mount .footer-2gL1pp,
-#app-mount .footer-3mqk7D {
+#app-mount .footer-3mqk7D,
+#app-mount .footer_eacf42 {
+  display: none;
   background-color: var(--background-secondary);
   box-shadow: none;
 }
@@ -775,6 +789,10 @@ div[data-list-id^="members-"] > div {
 #app-mount .pill-2pQByF {
   background-color: rgba(var(--accent-alt), 1);
   color: #fff;
+}
+
+#app-mount .container__00c21 {
+  background-color: rgba(var(--shay-light-rgba), 0.3);
 }
 
 #app-mount .keybindShortcut-1BD6Z1 span {

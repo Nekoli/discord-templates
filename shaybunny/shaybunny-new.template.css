@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 2.2
+ * @version 2.2.1
  */
 
 /* 
@@ -673,7 +673,7 @@ div[role="menuitem"]:active {
 }
 
 /* hiding discovery footer cause it is gay */
-#app-mount .footer-2gL1pp,
+#app-mount .footer_aa1bff,
 #app-mount .footer-3mqk7D,
 #app-mount .footer_eacf42 {
   display: none;

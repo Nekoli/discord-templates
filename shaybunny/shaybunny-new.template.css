@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.0
+ * @version 3.0.1
  */
 
 /* 
@@ -67,6 +67,7 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --background-message-hover: rgba(var(--shay-light-rgba), 0.4);
   --channeltextarea-background: transparent;
   --channel-text-area-placeholder: var(--text-normal);
+  --custom-channel-members-bg: var(--background-secondary);
   --activity-card-background: rgba(var(--shay-light-rgba), 0.05);
   --deprecated-store-bg: transparent;
   --background-modifier-hover: rgba(var(--shay-light-rgba), 0.3);
@@ -290,6 +291,14 @@ div[class^="sidebar_"] > nav > div[class^="searchBar"] {
   background: rgb(var(--shay-dark-rgba), 0.8);
 }
 
+.members_cbd271 {
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.4);
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.07);
+  --background-modifier-active: var(--background-modifier-hover);
+  --background-modifier-selected: rgba(var(--shay-light-rgba), 0.07);
+  background: rgb(var(--shay-dark-rgba), 0.8);
+}
+
 div[data-list-id^="members-"][class*="scrollerBase_"] {
   background: transparent;
 }
@@ -345,7 +354,7 @@ div[class^="app_"] > div[class^="bg_"] {
   background-color: transparent;
 }
 div[class*="baseLayer_"] > div[class^="container_"] {
-  background-color: rgb(var(--shay-dark-rgba), 0.4);
+  background-color: rgb(var(--shay-dark-rgba),s);
 }
 
 nav + div [class^="sidebar_"],

@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 2.4
+ * @version 3.0
  */
 
 /* 
@@ -31,26 +31,26 @@ button {
   --background-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/upload/images/2023/08/XrcPwyUmf1eOrrEsyfKP_08_c9de05cd352c7edfeda1264ae484c28a_image_original.png");
   --home-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/assets/shay/NEW_CHIBI_CLOSE.gif");
   --background-solid: var(--shaybun-dark);
-  --background-solid-dark: #002127;
-  --background-solid-darker: #000d0f;
-  --accent: 108, 194, 191;
-  --accent-alt: 108, 194, 191;
-  --shay-dark-rgba: 0, 0, 0;
-  --shay-light-rgba: 255, 255, 255;
-  --shay-light-rgba: 108, 194, 191;
-  --shay-light-hsl: 178, 41%, 59%, 0.5;
-  --shay-dark-hsl: 190, 100%, 12%, 0.8;
-  --shay-dark-rgba: 0, 52, 63;
+  --background-solid-dark: #7d124b;
+  --background-solid-darker: #4b022a;
+  --accent: 196, 40, 123;
+  --accent-alt: 196, 40, 123;
+  --shay-light-rgba: 250, 184, 226;
+  --shay-light-hsl: 322, 87%, 85%, 0.5;
+  --shay-dark-hsl: 328, 75%, 28%, 0.8;
+  --shay-dark-rgba: 125, 18, 75;
   --shay-link-rgba: 197, 227, 132;
-  --shaybun-light: #6cc2bf;
-  --shaybun-dark: #00343f;
+  --shaybun-light: #fab7e2;
+  --shaybun-dark: #7d124b;
   --shaybun-link: #c5e384;
   /* BlurpleRecolor */
   --accentcolor: var(--shay-light-rgba);
   --vaccentcolor-hover: rgb(var(--shay-light-rgba));
   --vaccentcolor-active: rgb(var(--shay-light-rgba));
   --brand-260: var(--shaybun-dark);
+  --brand-500: var(--shaybun-light);
   --brand-560: var(--shaybun-light);
+  --white-500: var(--shaybun-dark);
 }
 
 :not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
@@ -66,19 +66,21 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --background-accent: rgba(var(--shay-dark-rgba), 0.1);
   --background-message-hover: rgba(var(--shay-light-rgba), 0.4);
   --channeltextarea-background: transparent;
+  --channel-text-area-placeholder: var(--text-normal);
   --activity-card-background: rgba(var(--shay-light-rgba), 0.05);
   --deprecated-store-bg: transparent;
   --background-modifier-hover: rgba(var(--shay-light-rgba), 0.3);
   --background-modifier-active: rgba(var(--shay-light-rgba), 0.3);
   --background-modifier-selected: rgba(var(--shay-light-rgba), 0.6);
+  --background-modifier-accent: rgba(var(--shay-light-rgba), 0.5);
   --elevation-low: inset 0 -1px 0 0 rgba(var(--shay-dark-rgba), 0.3);
   --channels-default: rgba(var(--shay-light-rgba), 0.65);
   --channel-icon: rgba(var(--shay-light-rgba), 0.75);
   --deprecated-quickswitcher-input-background: rgba(var(--shay-dark-rgba), 0.1);
   --header-primary: rgba(var(--shay-light-rgba), 1);
   --header-secondary: rgba(var(--shay-light-rgba), 0.6);
-  --text-normal: rgba(var(--shay-light-rgba), 0.8);
-  --text-muted: #d2d5da;
+  --text-normal: rgba(var(--shay-light-rgba), 1);
+  --text-muted: #dad2d7;
   --interactive-muted: rgba(var(--shay-light-rgba), 0.15);
   --interactive-normal: rgba(var(--shay-light-rgba), 0.75);
   --interactive-hover: rgba(var(--shay-light-rgba), 1);
@@ -95,11 +97,22 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --button-positive-background: rgba(var(--shay-light-rgba), 0.6);
   --button-positive-background-active: var(--shaybun-light);
   --button-positive-background-hover: var(--shaybun-light);
-  --button-secondary-background: rgba(var(--shay-dark-rgba), 0.8);
+  --button-secondary-background: rgba(var(--shay-light-rgba), 0.8);
   --button-secondary-background-active: var(--shaybun-light);
   --button-secondary-background-hover: var(--shaybun-light);
   --primary-630: hsla(var(--shay-dark-hsl));
   --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
+  --bg-backdrop: hsla(var(--shay-dark-hsl));
+  --shadow-ledge: transparent;
+}
+
+#app-mount .categoryFadeBlurple_af1167
+{
+  background-color: var(--bg-backdrop);
+}
+
+.container_cebd1c {
+  background-color: var(--shaybun-light)!important;
 }
 
 ::selection {
@@ -267,13 +280,14 @@ div[class^="sidebar_"] > nav > div[class^="searchBar"] {
   height: 54px;
 }
 
+
 /* members wrapper */
-.container_b2ce9c {
+.container_cbd271 {
   --background-secondary: rgba(var(--shay-dark-rgba), 0.4);
   --background-modifier-hover: rgba(var(--shay-light-rgba), 0.07);
   --background-modifier-active: var(--background-modifier-hover);
   --background-modifier-selected: rgba(var(--shay-light-rgba), 0.07);
-  background: rgb(var(--shay-dark-rgba), 0.9);
+  background: rgb(var(--shay-dark-rgba), 0.8);
 }
 
 div[data-list-id^="members-"][class*="scrollerBase_"] {
@@ -389,6 +403,10 @@ section div[class^="toolbar"] > div[role] {
   height: 28px;
 }
 
+.numberBadge_df8943 {
+  color: var(--shaybun-dark)
+}
+
 section div[class^="toolbar"] > div[role] svg {
   width: 22px;
 }
@@ -439,6 +457,15 @@ button[aria-label="Open sticker picker"] {
 
 /* Panels */
 
+.activityPanel_a4d4d9
+{
+  border-bottom: 0px;
+}
+.panel_bf1a22
+{
+  background: transparent!important;
+}
+
 div[class^="sidebar_"] > section {
   --background-primary: rgba(var(--shay-light-rgba), 0.07);
   --background-secondary: rgba(var(--shay-light-rgba), 0.1);
@@ -462,8 +489,10 @@ div[class^="sidebar_"] > section > div:last-child [class^="avatarWrapper_"] {
 
 div[class^="chat"] {
   --background-floating: rgba(var(--shay-dark-rgba), 0.5);
-  background: transparent;
+  background: transparent!important;
 }
+
+
 
 div[class^="container_"][id^="chat-messages-"] {
   --background-modifier-hover: var(--background-solid-dark);
@@ -574,7 +603,11 @@ html code.inline {
 div[aria-label*="_SETTINGS"],
 div[aria-label*="_DEBUG"] {
   --background-primary: transparent;
-  --background-secondary: rgba(var(--shay-dark-rgba), 0.7);
+  --background-secondary: rgba(var(--shay-dark-rgba), 1);
+}
+
+.sessionIcon_c7a2c0{
+  background-color: var(--shaybun-light)!important;
 }
 
 div[class^="sidebarRegionScroller_"] > nav {
@@ -681,6 +714,10 @@ div[role="menuitem"]:active {
   box-shadow: none;
 }
 
+.container_f1fd9c, .header_f1fd9c {
+  background: transparent!important;
+}
+
 #app-mount .root-1gCeng,
 #app-mount .addGamePopout-2RY8Ju,
 #app-mount .keyboardShortcutsModal-3piNz7,
@@ -691,6 +728,8 @@ div[role="menuitem"]:active {
 #app-mount .contentWarningPopout-n5JsIs {
   background-color: var(--background-primary);
 }
+
+
 
 #app-mount .codeRedemptionRedirect-1wVR4b,
 #app-mount .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC,

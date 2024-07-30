@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.0.1
+ * @version 3.0.2
  */
 
 /* 
@@ -105,6 +105,7 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
   --bg-backdrop: hsla(var(--shay-dark-hsl));
   --shadow-ledge: transparent;
+  --home-background: hsla(var(--shay-dark-hsl));
 }
 
 #app-mount .categoryFadeBlurple_af1167

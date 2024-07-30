@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 2.2.1
+ * @version 2.4
  */
 
 /* 
@@ -29,7 +29,7 @@ button {
   /* Dark Matter Variables */
   --avatar-size: 32px;
   --background-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/upload/images/2023/08/XrcPwyUmf1eOrrEsyfKP_08_c9de05cd352c7edfeda1264ae484c28a_image_original.png");
-  --home-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/upload/images/2023/10/sl5vTsaGBBo6HATJTMvj_17_2ddf79510d75468fdb98214d5b1972c1_image_original.gif");
+  --home-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/assets/shay/NEW_CHIBI_CLOSE.gif");
   --background-solid: var(--shaybun-dark);
   --background-solid-dark: #002127;
   --background-solid-darker: #000d0f;

@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.0.2
+ * @version 3.0.5
  */
 
 /* 
@@ -65,10 +65,12 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --background-floating: rgba(var(--shay-dark-rgba), 0.8);
   --background-accent: rgba(var(--shay-dark-rgba), 0.1);
   --background-message-hover: rgba(var(--shay-light-rgba), 0.4);
+  --bg-mod-subtle: rgba(var(--shay-light-rgba), 0.2);
   --channeltextarea-background: transparent;
   --channel-text-area-placeholder: var(--text-normal);
   --custom-channel-members-bg: var(--background-secondary);
   --activity-card-background: rgba(var(--shay-light-rgba), 0.05);
+  --card-primary-bg: rgba(var(--shay-dark-rgba), 0.4);
   --deprecated-store-bg: transparent;
   --background-modifier-hover: rgba(var(--shay-light-rgba), 0.3);
   --background-modifier-active: rgba(var(--shay-light-rgba), 0.3);
@@ -103,7 +105,9 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --button-secondary-background-hover: var(--shaybun-light);
   --primary-630: hsla(var(--shay-dark-hsl));
   --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
+  --primary-700: var(--shaybun-light);
   --bg-backdrop: hsla(var(--shay-dark-hsl));
+  --bg-surface-raised: rgba(var(--shay-light-rgba), 0.1);
   --shadow-ledge: transparent;
   --home-background: hsla(var(--shay-dark-hsl));
 }
@@ -872,9 +876,33 @@ div[class*="footerSeparator"] {
 }
 
 /* Forums */
-.container-3wLKDe {
+.container_a6d69a {
   background: var(--background-primary);
 }
 li[class^="card_"] > div[class^="container_"] {
   background: var(--background-floating);
+}
+
+/* Call */
+
+#app-mount div[class^="callContainer"] {
+  background: var(--background-floating);
+}
+
+#app-mount div[class^="liveQualityIndicator"] {
+  background-color: var(--shaybun-light)!important;
+}
+
+#app-mount div[class^="clipBadge"] {
+  background-color: var(--shaybun-light)!important;
+  color: var(--shaybun-dark)!important;
+}
+
+#app-mount div[class^="gradientTop"] {
+  background: transparent;
+}
+
+
+#app-mount div[class^="gradientBottom"] {
+  background: transparent;
 }

@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.0.5
+ * @version 3.0.6
  */
 
 /* 
@@ -147,6 +147,10 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 
 .none-2Eo-qx::-webkit-scrollbar {
   display: none !important;
+}
+
+div[class*="resizeHandle"] {
+  background: rgba(var(--accent-alt), 0.5) !important;
 }
 
 /* Titlebar */
@@ -469,6 +473,15 @@ button[aria-label="Open sticker picker"] {
   display: none;
 }
 
+div[aria-label="Play Activities here"] {
+  display: none;
+}
+
+/* Hide Play Again */
+.container_e5a9ed {
+  display: none;
+}
+
 /* Panels */
 
 .activityPanel_a4d4d9
@@ -487,23 +500,22 @@ div[class^="sidebar_"] > section {
   margin-bottom: 70px;
 }
 
+
 div[class^="sidebar_"] > section > div:last-child {
   background: rgba(var(--shay-dark-rgba), 0.8);
   box-sizing: border-box;
   height: 70px;
+  width: 240px;
   max-width: 250px;
   position: absolute;
   bottom: 0;
-}
-div[class^="sidebar_"] > section > div:last-child [class^="avatarWrapper_"] {
-  flex: 1;
 }
 
 /* Content */
 
 div[class^="chat"] {
-  --background-floating: rgba(var(--shay-dark-rgba), 0.5);
-  background: transparent!important;
+  --background-floating: transparent!important;
+  background:rgba(var(--shay-dark-rgba), 0.5);
 }
 
 
@@ -686,9 +698,38 @@ div[class^="tooltip_"] {
 
 /* Buttons */
 
+.live_ec1c2d {
+  background-color: var(--shaybun-dark) !important;
+  color: var(--shaybun-light)!important;
+}
+
 button[class*="button_"][class*="color"],
 .bd-button {
   --vaccentcolor: var(--accent-alt);
+}
+
+div[class*="overlayTitle"]
+{
+  background: rgba(var(--shay-dark-rgba), 0.7) !important;
+  color: var(--shaybun-light)!important;
+}
+
+div[aria-label*="Options"]
+{
+  background: rgba(var(--shay-dark-rgba), 0.7) !important;
+  color: var(--shaybun-light)!important;
+}
+
+.status_ba4b17
+{
+  background: rgba(var(--shay-dark-rgba), 0.7) !important;
+  color: var(--shaybun-light)!important;
+}
+
+div[class*="centerIcon"]
+{
+  
+  color: var(--shaybun-light)!important;
 }
 
 .bd-button {
@@ -720,9 +761,7 @@ div[role="menuitem"]:active {
 }
 
 /* hiding discovery footer cause it is gay */
-#app-mount .footer_aa1bff,
-#app-mount .footer-3mqk7D,
-#app-mount .footer_eacf42 {
+#app-mount .footer_d71945 {
   display: none;
   background-color: var(--background-secondary);
   box-shadow: none;

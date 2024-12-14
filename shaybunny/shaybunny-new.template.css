@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.0.7
+ * @version 3.1.0
  */
 
 /* 
@@ -130,16 +130,34 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 /* Scrollbars */
 
 ::-webkit-scrollbar {
-  width: 14px !important;
+  width: 10px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px !important;
+  border-radius: 6px !important;
   border: 3px solid transparent !important;
   background-color: rgba(var(--accent-alt), 1) !important;
 }
 
 ::-webkit-scrollbar-track {
+  visibility: visible !important;
+  border-radius: 8px !important;
+  border: 3px solid transparent !important;
+  background-color: transparent !important;
+  background-clip: padding-box !important;
+}
+
+#emoji-picker-tab-panel [class^="scroller_"][class*="scrollerBase_"]::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+#emoji-picker-tab-panel [class^="scroller_"][class*="scrollerBase_"]::-webkit-scrollbar-thumb {
+  border-radius: 6px !important;
+  border: 3px solid transparent !important;
+  background-color: rgba(var(--accent-alt), 1) !important;
+}
+
+#emoji-picker-tab-panel [class^="scroller_"][class*="scrollerBase_"]::-webkit-scrollbar-track {
   visibility: visible !important;
   border-radius: 8px !important;
   border: 3px solid transparent !important;

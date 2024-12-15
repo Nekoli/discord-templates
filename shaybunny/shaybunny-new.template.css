@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.1.1
+ * @version 3.1.2
  */
 
 /* 
@@ -29,7 +29,8 @@ button {
   /* Dark Matter Variables */
   --avatar-size: 32px;
   --background-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/upload/images/2023/08/XrcPwyUmf1eOrrEsyfKP_08_c9de05cd352c7edfeda1264ae484c28a_image_original.png");
-  --home-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/assets/shay/NEW_CHIBI_CLOSE.gif");
+  --home-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/assets/shay/SHAY_CLOSE.png");
+  --hover-home-image: url("https://vtubersdotme.nyc3.cdn.digitaloceanspaces.com/assets/shay/DEBIL_CLOSE.png");
   --background-solid: var(--shaybun-dark);
   --background-solid-dark: #7d124b;
   --background-solid-darker: #4b022a;
@@ -271,8 +272,45 @@ span[class^="expandedFolderBackground_"] {
 	 height: 40px;
  } */
 
-div[data-list-item-id="guildsnav___home"] {
+/* div[data-list-item-id="guildsnav___home"] {
   background: var(--home-image) center/200% no-repeat;
+} */
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div[data-list-item-id="guildsnav___home"] {
+  background-image: var(--home-image);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: opacity 0.3s ease;
+  animation: slowSpin 8s linear infinite;
+}
+
+div[data-list-item-id="guildsnav___home"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--hover-home-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: slowSpin 8s linear infinite;
+}
+
+div[data-list-item-id="guildsnav___home"]:hover::after {
+  opacity: 1;
 }
 
 div[class^="unreadMentionsIndicatorBottom_"] {

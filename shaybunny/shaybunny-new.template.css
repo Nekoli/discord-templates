@@ -1014,3 +1014,52 @@ li[class^="card_"] > div[class^="container_"] {
 #app-mount div[class^="gradientBottom"] {
   background: transparent;
 }
+
+/* Profile */
+button[class*="bannerColor"]
+{
+  background: var(--background-secondary);
+  color: var(--shaybun-light);
+}
+
+
+div[aria-label*="Originally known as nekoli"] img {
+  display: inline-block;
+  vertical-align: middle;
+  content: url("https://cdn.discordapp.com/emojis/1218077960167493692.webp?size=512")!important;
+}
+
+
+div[aria-label*="Originally known as Shay"] {
+  position: relative;
+  display: inline-block;
+}
+
+div[aria-label*="Originally known as Shay"] img {
+  display: block;
+  content: url("https://cdn.discordapp.com/emojis/1218077960167493692.webp?size=512")!important;
+}
+
+div[aria-label*="Originally known as Shay"]::after {
+  content: "verified bnnuy :3";
+  position: absolute;
+  bottom: -10%; /* Position above the image */
+  left: 550%;
+  transform: translateX(-50%);
+  background-color: var(--background-secondary);
+  color: var(--shaybun-light);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Bubblegum Sans', cursive;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+div[aria-label*="Originally known as Shay"]:hover::after {
+  opacity: 1;
+}

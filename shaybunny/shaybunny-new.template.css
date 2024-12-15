@@ -51,11 +51,128 @@ button {
   --brand-260: var(--shaybun-dark);
   --brand-500: var(--shaybun-light);
   --brand-560: var(--shaybun-light);
-  --white-500: var(--shaybun-dark);
+  --white-500: var(--shaybun-dark); 
   --button-filled-brand-text: var(--shaybun-dark);
 }
 
-:not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
+:not(div[class*="userProfile"][class*="unThemed"]).theme-dark {
+  --background-primary: rgba(var(--shay-dark-rgba), 0.3);
+  --background-mobile-primary: var(--background-primary);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.8);
+  --background-mobile-secondary: var(--background-secondary);
+  --background-secondary-alt: rgba(var(--shay-dark-rgba), 0.3);
+  --background-tertiary: transparent;
+  --background-floating: rgba(var(--shay-dark-rgba), 0.8);
+  --background-accent: rgba(var(--shay-dark-rgba), 0.1);
+  --background-message-hover: rgba(var(--shay-light-rgba), 0.4);
+  --bg-mod-subtle: rgba(var(--shay-light-rgba), 0.2);
+  --channeltextarea-background: transparent;
+  --channel-text-area-placeholder: var(--text-normal);
+  --custom-channel-members-bg: var(--background-secondary);
+  --activity-card-background: rgba(var(--shay-light-rgba), 0.05);
+  --card-primary-bg: rgba(var(--shay-dark-rgba), 0.4);
+  --deprecated-store-bg: transparent;
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.3);
+  --background-modifier-active: rgba(var(--shay-light-rgba), 0.3);
+  --background-modifier-selected: rgba(var(--shay-light-rgba), 0.6);
+  --background-modifier-accent: rgba(var(--shay-light-rgba), 0.5);
+  --elevation-low: inset 0 -1px 0 0 rgba(var(--shay-dark-rgba), 0.3);
+  --channels-default: rgba(var(--shay-light-rgba), 0.65);
+  --channel-icon: rgba(var(--shay-light-rgba), 0.75);
+  --deprecated-quickswitcher-input-background: rgba(var(--shay-dark-rgba), 0.1);
+  --header-primary: rgba(var(--shay-light-rgba), 1);
+  --header-secondary: rgba(var(--shay-light-rgba), 0.6);
+  --text-normal: rgba(var(--shay-light-rgba), 1);
+  --text-muted: #dad2d7;
+  --interactive-muted: rgba(var(--shay-light-rgba), 0.15);
+  --interactive-normal: rgba(var(--shay-light-rgba), 0.75);
+  --interactive-hover: rgba(var(--shay-light-rgba), 1);
+  --interactive-active: rgba(var(--shay-light-rgba), 1);
+  --deprecated-card-bg: rgba(var(--shay-light-rgba), 0.05);
+  --text-link: rgba(var(--shay-link-rgba), 1);
+  --focus-primary: rgba(var(--accent), 1);
+  --modal-background: rgba(var(--shay-dark-rgba), 0.5);
+  --modal-footer-background: rgba(var(--shay-dark-rgba), 0.1);
+  --input-background: rgba(var(--shay-light-rgba), 0.3);
+  --deprecated-text-input-bg: rgba(var(--shay-dark-rgba), 0.8);
+  --deprecated-text-input-border: rgba(var(--shay-light-rgba), 0.8);
+  --status-danger: var(--shaybun-light);
+  --button-positive-background: rgba(var(--shay-light-rgba), 0.6);
+  --button-positive-background-active: var(--shaybun-light);
+  --button-positive-background-hover: var(--shaybun-light);
+  --button-secondary-background: rgba(var(--shay-light-rgba), 0.8);
+  --button-secondary-background-active: var(--shaybun-light);
+  --button-secondary-background-hover: var(--shaybun-light);
+  --primary-630: hsla(var(--shay-dark-hsl));
+  --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
+  --primary-700: var(--shaybun-light);
+  --bg-backdrop: hsla(var(--shay-dark-hsl));
+  --bg-surface-raised: rgba(var(--shay-light-rgba), 0.1);
+  --shadow-ledge: transparent;
+  --home-background: hsla(var(--shay-dark-hsl));
+  
+}
+
+div[class*="userProfile"][class*="unThemed"].theme-light {
+  --background-primary: rgba(var(--shay-dark-rgba), 0.3);
+  --background-mobile-primary: var(--background-primary);
+  --background-secondary: rgba(var(--shay-dark-rgba), 0.8);
+  --background-mobile-secondary: var(--background-secondary);
+  --background-secondary-alt: rgba(var(--shay-dark-rgba), 0.3);
+  --background-tertiary: transparent;
+  --background-floating: rgba(var(--shay-dark-rgba), 0.8);
+  --background-accent: rgba(var(--shay-dark-rgba), 0.1);
+  --background-message-hover: rgba(var(--shay-light-rgba), 0.4);
+  --bg-mod-subtle: rgba(var(--shay-light-rgba), 0.2);
+  --channeltextarea-background: transparent;
+  --channel-text-area-placeholder: var(--text-normal);
+  --custom-channel-members-bg: var(--background-secondary);
+  --activity-card-background: rgba(var(--shay-light-rgba), 0.05);
+  --card-primary-bg: rgba(var(--shay-dark-rgba), 0.4);
+  --deprecated-store-bg: transparent;
+  --background-modifier-hover: rgba(var(--shay-light-rgba), 0.3);
+  --background-modifier-active: rgba(var(--shay-light-rgba), 0.3);
+  --background-modifier-selected: rgba(var(--shay-light-rgba), 0.6);
+  --background-modifier-accent: rgba(var(--shay-light-rgba), 0.5);
+  --elevation-low: inset 0 -1px 0 0 rgba(var(--shay-dark-rgba), 0.3);
+  --channels-default: rgba(var(--shay-light-rgba), 0.65);
+  --channel-icon: rgba(var(--shay-light-rgba), 0.75);
+  --deprecated-quickswitcher-input-background: rgba(var(--shay-dark-rgba), 0.1);
+  --header-primary: rgba(var(--shay-light-rgba), 1);
+  --header-secondary: rgba(var(--shay-light-rgba), 0.6);
+  --text-normal: rgba(var(--shay-light-rgba), 1);
+  --text-muted: #dad2d7;
+  --interactive-muted: rgba(var(--shay-light-rgba), 0.15);
+  --interactive-normal: rgba(var(--shay-light-rgba), 0.75);
+  --interactive-hover: rgba(var(--shay-light-rgba), 1);
+  --interactive-active: rgba(var(--shay-light-rgba), 1);
+  --deprecated-card-bg: rgba(var(--shay-light-rgba), 0.05);
+  --text-link: rgba(var(--shay-link-rgba), 1);
+  --focus-primary: rgba(var(--accent), 1);
+  --modal-background: rgba(var(--shay-dark-rgba), 0.5);
+  --modal-footer-background: rgba(var(--shay-dark-rgba), 0.1);
+  --input-background: rgba(var(--shay-light-rgba), 0.3);
+  --deprecated-text-input-bg: rgba(var(--shay-dark-rgba), 0.8);
+  --deprecated-text-input-border: rgba(var(--shay-light-rgba), 0.8);
+  --status-danger: var(--shaybun-light);
+  --button-positive-background: rgba(var(--shay-light-rgba), 0.6);
+  --button-positive-background-active: var(--shaybun-light);
+  --button-positive-background-hover: var(--shaybun-light);
+  --button-secondary-background: rgba(var(--shay-light-rgba), 0.8);
+  --button-secondary-background-active: var(--shaybun-light);
+  --button-secondary-background-hover: var(--shaybun-light);
+  --primary-630: hsla(var(--shay-dark-hsl));
+  --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
+  --primary-700: var(--shaybun-light);
+  --bg-backdrop: hsla(var(--shay-dark-hsl));
+  --bg-surface-raised: rgba(var(--shay-light-rgba), 0.1);
+  --shadow-ledge: transparent;
+  --home-background: hsla(var(--shay-dark-hsl));
+  
+}
+
+
+/* :not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
 :not(div[class*="userProfile"]).theme-light,
 div[class*="userProfile"][class*="unThemed"].theme-light {
   --background-primary: rgba(var(--shay-dark-rgba), 0.3);
@@ -112,7 +229,8 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
   --bg-surface-raised: rgba(var(--shay-light-rgba), 0.1);
   --shadow-ledge: transparent;
   --home-background: hsla(var(--shay-dark-hsl));
-}
+  
+} */
 
 #app-mount .categoryFadeBlurple_af1167
 {
@@ -1016,6 +1134,12 @@ li[class^="card_"] > div[class^="container_"] {
 }
 
 /* Profile */
+.custom-profile-theme .inner_c59af2
+{
+  background:rgba(var(--shay-dark-rgba), 0.5) !important;
+}
+
+
 button[class*="bannerColor"]
 {
   background: var(--background-secondary);

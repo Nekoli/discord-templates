@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.1.2
+ * @version 3.1.3
  */
 
 /* 
@@ -53,6 +53,7 @@ button {
   --brand-560: var(--shaybun-light);
   --white-500: var(--shaybun-dark); 
   --button-filled-brand-text: var(--shaybun-dark);
+  --twitch: var(--shaybun-light);
 }
 
 :not(div[class*="userProfile"][class*="unThemed"]).theme-dark {
@@ -557,6 +558,8 @@ nav + div[class^="base_"] {
 
 nav + div[class^="base_"] > div[class^="notice"] {
   border-radius: 0;
+  --custom-notice-text: var(--shaybun-light)!important;
+  --custom-notice-background: rgba(var(--shay-dark-rgba), 0.9);
 }
 
 div[class^="base_"] > div,

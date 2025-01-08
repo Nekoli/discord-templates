@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.1.3
+ * @version 3.1.4
  */
 
 /* 
@@ -46,6 +46,7 @@ button {
   --shaybun-link: #c5e384;
   /* BlurpleRecolor */
   --accentcolor: var(--shay-light-rgba);
+  --accentcolor_v: var(--shay-light-rgba), 0.8;
   --vaccentcolor-hover: rgb(var(--shay-light-rgba));
   --vaccentcolor-active: rgb(var(--shay-light-rgba));
   --brand-260: var(--shaybun-dark);
@@ -98,12 +99,14 @@ button {
   --deprecated-text-input-bg: rgba(var(--shay-dark-rgba), 0.8);
   --deprecated-text-input-border: rgba(var(--shay-light-rgba), 0.8);
   --status-danger: var(--shaybun-light);
+  --button-filled-brand-text: var(--shaybun-dark);
   --button-positive-background: rgba(var(--shay-light-rgba), 0.6);
   --button-positive-background-active: var(--shaybun-light);
   --button-positive-background-hover: var(--shaybun-light);
   --button-secondary-background: rgba(var(--shay-light-rgba), 0.8);
   --button-secondary-background-active: var(--shaybun-light);
   --button-secondary-background-hover: var(--shaybun-light);
+  --button-filled-brand-background: var(--button-secondary-background);
   --primary-630: hsla(var(--shay-dark-hsl));
   --primary-630-hsl: 220 calc(1 * 6.5%) 18%;
   --primary-700: var(--shaybun-light);
@@ -457,6 +460,15 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 }
 
 /* Sidebar */
+
+[class^="iconBadge_"]  {
+  background-color: var(--shaybun-dark)!important;
+}
+
+[class^="iconBadge_"] [class^="icon_"] path {
+  fill: var(--shaybun-light) !important; 
+  background: var(--shaybun-dark)!important;
+}
 
 .platform-win [class^="sidebar_"] {
   border-radius: 0;
@@ -893,10 +905,33 @@ div[class^="tooltip_"] {
   color: var(--shaybun-light)!important;
 }
 
+div[class*="container_"][class*="checked"]
+{
+  background-color: var(--shaybun-light) !important;
+}
+
+
 button[class*="button_"][class*="color"],
 .bd-button {
   --vaccentcolor: var(--accent-alt);
 }
+
+button[class*="button_"][class*="color"]:hover,
+.bd-button {
+  background: rgba(var(--shay-light-rgba), 0.5) !important;
+}
+
+button[class*="button_"][class*="color"][class*="buttonActive"],
+.bd-button {
+  background-color: rgba(var(--shay-light-rgba), 0.1) !important;
+  color: var(--shaybun-light);
+}
+
+button[class*="button_"][class*="color"][class*="buttonActive"]:hover,
+.bd-button {
+  background: rgba(var(--shay-light-rgba), 0.5) !important;
+}
+
 
 div[class*="overlayTitle"]
 {
@@ -914,6 +949,21 @@ div[aria-label*="Options"]
 {
   background: rgba(var(--shay-dark-rgba), 0.7) !important;
   color: var(--shaybun-light)!important;
+}
+
+.status_ba4b17 svg path
+{
+  fill: var(--shaybun-light)!important;
+}
+
+button[class*="participantsButton"]
+{
+  background: var(--shaybun-dark)!important;
+}
+
+svg[class*="controlIcon"] path
+{
+  fill: var(--shaybun-light)!important;
 }
 
 div[class*="centerIcon"]

@@ -4,7 +4,7 @@
  * @bg author LuckyLemon8
  * @base author ShadowDevilsAvenged
  * @description Theme based around shaybun_, dark theme only.
- * @version 3.1.4
+ * @version 3.1.5
  */
 
 /* 
@@ -378,12 +378,21 @@ ul[data-list-id="guildsnav"] [class^="pill_"] span {
   --header-primary: rgba(var(--accent), 1);
 }
 
+div[class^="folderIconWrapper_"] {
+  background-color: rgba(var(--shay-dark-rgba), 0.4)!important;
+}
+
 span[class^="expandedFolderBackground_"] {
   --background-secondary: rgba(var(--shay-dark-rgba), 0.25);
   border-radius: 14px;
   width: 40px;
   left: 16px;
 }
+
+div[class^="expandedFolderIconWrapper_"] svg path {
+  fill: var(--shaybun-light);
+}
+
 
 /* Guild Icon Size */
 
@@ -570,6 +579,7 @@ nav + div[class^="base_"] {
 
 nav + div[class^="base_"] > div[class^="notice"] {
   border-radius: 0;
+  background: rgba(var(--shay-dark-rgba), 0.9)!important;
   --custom-notice-text: var(--shaybun-light)!important;
   --custom-notice-background: rgba(var(--shay-dark-rgba), 0.9);
 }
@@ -618,7 +628,7 @@ section div[class^="toolbar"] > div[role] {
   height: 28px;
 }
 
-.numberBadge_df8943 {
+.numberBadge__2b1f5 {
   color: var(--shaybun-dark)
 }
 
@@ -675,7 +685,7 @@ div[aria-label="Play Activities here"] {
 }
 
 /* Hide Play Again */
-.container_e5a9ed {
+.container__675e5 {
   display: none;
 }
 
@@ -1001,7 +1011,7 @@ div[role="menuitem"]:active {
 }
 
 /* hiding discovery footer cause it is gay */
-#app-mount .footer_d71945 {
+#app-mount .footer__214dc {
   display: none;
   background-color: var(--background-secondary);
   box-shadow: none;
@@ -1009,6 +1019,11 @@ div[role="menuitem"]:active {
 
 .container_f1fd9c, .header_f1fd9c {
   background: transparent!important;
+}
+
+div[class*="embedVideoActions"][class*="centerContent"][class*="wrapper"] 
+{
+  background-color: white;
 }
 
 #app-mount .root-1gCeng,
